@@ -1,0 +1,97 @@
+.nucleos__background{
+
+    background:
+        linear-gradient(
+            180deg,
+            #fff4e8,
+            #ffffff
+        );
+
+}
+
+.nucleos__title{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.nucleos__grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+.nucleos__card{
+
+    background:white;
+
+    border-radius:
+        var(--radius-default);
+
+    box-shadow:
+        var(--shadow-default);
+
+    padding:30px;
+
+    text-align:center;
+
+    transition:
+        var(--transition-default);
+
+}
+
+.nucleos__card:hover{
+
+    transform:
+        translateY(-8px)
+        scale(1.03);
+
+}
+
+.nucleos__icon{
+
+    width:90px;
+
+    margin:0 auto 20px;
+
+}
+
+.nucleos__link{
+
+    background:
+        var(--gradient-primary);
+
+    background-clip:text;
+
+    -webkit-background-clip:text;
+
+    color:transparent;
+
+    font-weight:bold;
+
+}
+
+.nucleos__card{
+
+    opacity:0;
+
+    transform:
+        translateY(40px);
+
+}
+
+.nucleos__card--visible{
+
+    opacity:1;
+
+    transform:
+        translateY(0);
+
+}

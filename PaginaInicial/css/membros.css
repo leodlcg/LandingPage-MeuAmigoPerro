@@ -1,0 +1,40 @@
+.membros__grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:25px;
+
+}
+
+.membros__card{
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    transition:
+        var(--transition-default);
+
+}
+
+.membros__card:hover{
+
+    transform:
+        scale(1.05);
+
+}
+
+.membros__photo{
+
+    height:280px;
+
+    width:100%;
+
+    object-fit:cover;
+
+}

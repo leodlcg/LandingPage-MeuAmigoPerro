@@ -1,0 +1,25 @@
+.rodape{
+
+    background:#111;
+
+    color:white;
+
+    padding:80px 40px;
+
+}
+
+.rodape__nav{
+
+    display:flex;
+
+    gap:20px;
+
+    margin:20px 0;
+
+}
+
+.rodape__nav a{
+
+    color:white;
+
+}

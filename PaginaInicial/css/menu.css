@@ -1,0 +1,50 @@
+.menu{
+
+    position:fixed;
+
+    top:0;
+    left:0;
+
+    z-index:999;
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 60px;
+
+    backdrop-filter:blur(12px);
+
+    background:
+        rgba(255,255,255,.8);
+
+}
+
+.menu__nav{
+
+    display:flex;
+
+    gap:32px;
+
+}
+
+.menu__link{
+
+    color:var(--color-dark);
+
+    transition:
+        var(--transition-default);
+
+}
+
+.menu__link:hover{
+
+    color:var(--color-primary);
+
+    transform:
+        translateY(-2px);
+
+}

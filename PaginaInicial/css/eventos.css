@@ -1,0 +1,71 @@
+.eventos__background{
+
+    background:
+        #fff;
+
+}
+
+.eventos__carousel{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+.eventos__track{
+
+    display:flex;
+
+    overflow:hidden;
+
+    width:100%;
+
+}
+
+.eventos__card{
+
+    min-width:100%;
+
+    background:white;
+
+    border-radius:
+        30px;
+
+    overflow:hidden;
+
+    box-shadow:
+        var(--shadow-default);
+
+}
+
+.eventos__image{
+
+    height:450px;
+
+    width:100%;
+
+    object-fit:cover;
+
+}
+
+.eventos__gallery{
+
+    display:none;
+
+}
+
+.eventos__lightbox{
+
+    position:fixed;
+
+    inset:0;
+
+    display:none;
+
+    background:
+        rgba(0,0,0,.85);
+
+}

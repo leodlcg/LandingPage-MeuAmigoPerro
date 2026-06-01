@@ -1,0 +1,51 @@
+.apoiadores__content{
+
+    text-align:center;
+
+}
+
+.apoiadores__paw{
+
+    position:relative;
+
+    width:320px;
+    height:320px;
+
+    margin:auto;
+
+}
+
+.apoiadores__name{
+
+    position:absolute;
+
+    transition:
+        .4s;
+
+}
+
+.apoiadores__name:hover{
+
+    transform:
+        scale(1.2);
+
+}
+
+.apoiadores__name--xl{
+
+    font-size:42px;
+
+}
+
+.apoiadores__name--lg{
+
+    font-size:30px;
+
+}
+
+.apoiadores__name--animate{
+
+    transform:
+        scale(1.25);
+
+}

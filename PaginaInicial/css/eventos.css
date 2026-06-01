@@ -1,71 +1,39 @@
-.eventos__background{
-
-    background:
-        #fff;
-
-}
-
 .eventos__carousel{
 
-    display:flex;
-
-    align-items:center;
-
-    gap:20px;
-
-}
-
-.eventos__track{
-
-    display:flex;
-
-    overflow:hidden;
-
-    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 200px;
+    gap: 10px;
+    background-image: url(/PaginaInicial/imgs/eventos/Fundo.png);
+    background-size: 1100px;
+    background-repeat: no-repeat;
+    background-position: 320px center;
 
 }
 
-.eventos__card{
+.eventos__card__centro{
 
-    min-width:100%;
-
-    background:white;
-
-    border-radius:
-        30px;
-
-    overflow:hidden;
-
-    box-shadow:
-        var(--shadow-default);
+    width: 300px;
+    height: 400px;
+    background-color: brown;
 
 }
 
-.eventos__image{
+.eventos__card__esquerda{
 
-    height:450px;
-
-    width:100%;
-
-    object-fit:cover;
-
-}
-
-.eventos__gallery{
-
-    display:none;
+    width: 200px;
+    height: 300px;
+    background-color: rebeccapurple;
+    transform: perspective(1000px) rotateY(-20deg);
 
 }
 
-.eventos__lightbox{
+.eventos__card__direita{
 
-    position:fixed;
-
-    inset:0;
-
-    display:none;
-
-    background:
-        rgba(0,0,0,.85);
+    width: 200px;
+    height: 300px;
+    background-color: blue;
+    transform: perspective(1000px) rotateY(20deg);
 
 }

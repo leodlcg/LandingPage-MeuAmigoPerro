@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MeuAmigoPerro</title>
     <link rel="stylesheet" href="CSS/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Indie+Flower&family=Matemasie&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -50,27 +53,36 @@
 
 <main>
 
+    <section id="banner-principal" class="banner-principal">
+
+        <div class="banner__background"></div>
+
+        <div class="banner__content">
+
+            <div class="banner__descricao">
+                <h1 class="banner__title">Uma Rede<br>de Esperança</h1>
+            </div>
+
+            <img class="img_banner" src="imgs/banner/Teco.png">
+
+        </div>
+
+
+    </section>
+
     <section id="nucleos" class="nucleos">
 
     <div class="nucleos__background"></div>
 
     <div class="nucleos__content">
 
-        <h2 class="nucleos__title">
-            Núcleos do Projeto
-        </h2>
-
         <div class="nucleos__grid">
 
             <article class="nucleos__card">
 
-                <img
-                    src="Assets/Icons/nucleo1.svg"
-                    class="nucleos__icon"
-                    alt="Núcleo Resgate"
-                >
+                <img src="imgs/nucleos/NAJ.webp" class="nucleos__icon" alt="Núcleo Resgate">
 
-                <h3 class="nucleos__card-title">Núcleo Administrativo e Jurídico</h3>
+                <h3 class="nucleos__card-title">Administrativo e Jurídico</h3>
 
                 <p class="nucleos__description">
                     Responsável pelos resgates dos animais.
@@ -83,13 +95,9 @@
 
             <article class="nucleos__card">
 
-                <img
-                    src="Assets/Icons/nucleo1.svg"
-                    class="nucleos__icon"
-                    alt="Núcleo Resgate"
-                >
+                <img src="imgs/nucleos/NCC.webp" class="nucleos__icon" alt="Núcleo Resgate">
 
-                <h3 class="nucleos__card-title">Núcleo de Comunicação e Conscientização</h3>
+                <h3 class="nucleos__card-title">Comunicação e Conscientização</h3>
 
                 <p class="nucleos__description">
                     Responsável pelos resgates dos animais.
@@ -102,13 +110,9 @@
 
             <article class="nucleos__card">
 
-                <img
-                    src="Assets/Icons/nucleo1.svg"
-                    class="nucleos__icon"
-                    alt="Núcleo Resgate"
-                >
+                <img src="imgs/nucleos/NCRP.webp" class="nucleos__icon" alt="Núcleo Resgate">
 
-                <h3 class="nucleos__card-title">Núcleo de Captação de Recursos e Parcerias</h3>
+                <h3 class="nucleos__card-title">Recursos e Parcerias</h3>
 
                 <p class="nucleos__description">
                     Responsável pelos resgates dos animais.
@@ -121,13 +125,9 @@
 
             <article class="nucleos__card">
 
-                <img
-                    src="Assets/Icons/nucleo1.svg"
-                    class="nucleos__icon"
-                    alt="Núcleo Resgate"
-                >
+                <img src="imgs/nucleos/NIO.webp" class="nucleos__icon" alt="Núcleo Resgate">
 
-                <h3 class="nucleos__card-title">Núcleo de Infraestrutura e Operações</h3>
+                <h3 class="nucleos__card-title">Infraestrutura e Operações</h3>
 
                 <p class="nucleos__description">
                     Responsável pelos resgates dos animais.
@@ -140,13 +140,9 @@
 
             <article class="nucleos__card">
 
-                <img
-                    src="Assets/Icons/nucleo1.svg"
-                    class="nucleos__icon"
-                    alt="Núcleo Resgate"
-                >
+                <img src="imgs/nucleos/NTI.webp" class="nucleos__icon" alt="Núcleo Resgate">
 
-                <h3 class="nucleos__card-title">Núcleo de Tecnologia da Informação</h3>
+                <h3 class="nucleos__card-title">Tecnologia da Informação</h3>
 
                 <p class="nucleos__description">
                     Responsável pelos resgates dos animais.
@@ -159,13 +155,9 @@
 
             <article class="nucleos__card">
 
-                <img
-                    src="Assets/Icons/nucleo1.svg"
-                    class="nucleos__icon"
-                    alt="Núcleo Resgate"
-                >
+                <img src="imgs/nucleos/NBA.webp" class="nucleos__icon" alt="Núcleo Resgate">
 
-                <h3 class="nucleos__card-title">Núcleo de Bem-estar Animal</h3>
+                <h3 class="nucleos__card-title">Bem-estar Animal</h3>
 
                 <p class="nucleos__description">
                     Responsável pelos resgates dos animais.
@@ -188,57 +180,25 @@
 
     <div class="eventos__content">
 
-        <h2 class="eventos__title">
-            Eventos
-        </h2>
-
         <div class="eventos__carousel">
 
-            <button class="eventos__button eventos__button--prev">
-                ←
-            </button>
+            <div class="eventos__card__esquerda">
 
-            <div class="eventos__track">
+                
+            </div>
 
-                <article class="eventos__card">
+            <div class="eventos__card__centro">
 
-                    <img
-                        src="Assets/Images/evento1.jpg"
-                        alt=""
-                        class="eventos__image"
-                    >
-
-                    <h3 class="eventos__name">
-                        Feira de Adoção
-                    </h3>
-
-                    <span class="eventos__date">
-                        Maio 2026
-                    </span>
-
-                    <p class="eventos__description">
-                        Evento de adoção comunitária.
-                    </p>
-
-                    <button class="eventos__gallery-button">
-                        Ver galeria
-                    </button>
-
-                </article>
 
             </div>
 
-            <button class="eventos__button eventos__button--next">
-                →
-            </button>
+            <div class="eventos__card__direita">
+
+                
+            </div>
 
         </div>
 
-        <div class="eventos__gallery">
-        </div>
-
-        <div class="eventos__lightbox">
-        </div>
 
     </div>
 
@@ -309,33 +269,159 @@
 
     <section id="apoiadores" class="apoiadores">
 
-    <div class="apoiadores__background"></div>
-
-    <div class="apoiadores__content">
-
         <h2 class="apoiadores__title">
             Apoiadores
         </h2>
 
-        <div class="apoiadores__paw apoiadores__paw--left">
+        <div class="apoiadores__background"></div>
+
+        <div class="apoiadores__content">
+ 
+            <div id="pata01" class="pata">
+
+                <div class="dedos">
+
+                    <div class="dedo dedo01">
+
+                        <p id="nomePataEsquerda0" class="nomesDedos">Lucas Almeida</p>
+                        <p id="nomePataEsquerda1" class="nomesDedos">Mariana Costa</p>
+                        <p id="nomePataEsquerda2" class="nomesDedos">Rafael Oliveira</p>
+
+                    </div>
+                    <div class="dedo dedo02">
+
+                        <p id="nomePataEsquerda3" class="nomesDedos">Beatriz Santos</p>
+                        <p id="nomePataEsquerda4" class="nomesDedos">Gabriel Ferreira</p>
+                        <p id="nomePataEsquerda5" class="nomesDedos">Camila Rodrigues</p>
+
+                    </div>
+                    <div class="dedo dedo03">
+
+                        <p id="nomePataEsquerda6" class="nomesDedos">Pedro Carvalho</p>
+                        <p id="nomePataEsquerda7" class="nomesDedos">Isabela Martins</p>
+                        <p id="nomePataEsquerda8" class="nomesDedos">Felipe Gomes</p>
+
+                    </div>
+                    <div class="dedo dedo04">
+
+                        <p id="nomePataEsquerda9" class="nomesDedos">Júlia Barbosa</p>
+                        <p id="nomePataEsquerda10" class="nomesDedos">Matheus Ribeiro</p>
+                        <p id="nomePataEsquerda11" class="nomesDedos">Larissa Pereira</p>
+
+                        
+                    </div>
+
+                </div>
+
+                <div class="almofada">
+
+                        <p id="nomePataEsquerda12" class="nomesAlmofada">Eduardo Rocha</p>
+                        <p id="nomePataEsquerda13" class="nomesAlmofada">Amanda Lopes</p>
+                        <p id="nomePataEsquerda14" class="nomesAlmofada">Vinícius Teixeira</p>
+                        <p id="nomePataEsquerda15" class="nomesAlmofada">Sofia Mendes</p>
+                        <p id="nomePataEsquerda16" class="nomesAlmofada">Henrique Araújo</p>
+
+                </div>
+
+            </div>
+
+            <div id="pata02" class="pata">
+
+                <div class="dedos">
+
+                    <div class="dedo dedo01">
+
+                        <p id="nomePataCentro0" class="nomesDedos">Bianca Cardoso</p>
+                        <p id="nomePataCentro1" class="nomesDedos">Gustavo Nascimento</p>
+                        <p id="nomePataCentro2" class="nomesDedos">Letícia Moreira</p>
+
+                    </div>
+                    <div class="dedo dedo02">
+
+                        <p id="nomePataCentro3" class="nomesDedos">Daniel Correia</p>
+                        <p id="nomePataCentro4" class="nomesDedos">Ana Bezerra</p>
+                        <p id="nomePataCentro5" class="nomesDedos">Bruno Monteiro</p>
+
+                    </div>
+                    <div class="dedo dedo03">
+
+                        <p id="nomePataCentro6" class="nomesDedos">Vitória Castro</p>
+                        <p id="nomePataCentro7" class="nomesDedos">Thiago Cunha</p>
+                        <p id="nomePataCentro8" class="nomesDedos">Elisa Farias</p>
+
+                    </div>
+                    <div class="dedo dedo04">
+
+                        <p id="nomePataCentro9" class="nomesDedos">João Vieira</p>
+                        <p id="nomePataCentro10" class="nomesDedos">Clara Duarte</p>
+                        <p id="nomePataCentro11" class="nomesDedos">André Melo</p>
+
+                        
+                    </div>
+
+                </div>
+
+                <div class="almofada">
+
+                        <p id="nomePataCentro12" class="nomesAlmofada">Nicole Batista</p>
+                        <p id="nomePataCentro13" class="nomesAlmofada">Leonardo Silva</p>
+                        <p id="nomePataCentro14" class="nomesAlmofada">Fernanda Andrade</p>
+                        <p id="nomePataCentro15" class="nomesAlmofada">Caio Moraes</p>
+                        <p id="nomePataCentro16" class="nomesAlmofada">Gabriela Souza</p>
+
+                </div>
+
+            </div>
+
+            <div id="pata03" class="pata">
+
+                <div class="dedos">
+
+                    <div class="dedo dedo01">
+
+                        <p id="nomePataDireita0" class="nomesDedos">Igor Freitas</p>
+                        <p id="nomePataDireita1" class="nomesDedos">Renata Lima</p>
+                        <p id="nomePataDireita2" class="nomesDedos">Arthur Cavalcante</p>
+
+                    </div>
+                    <div class="dedo dedo02">
+
+                        <p id="nomePataDireita3" class="nomesDedos">Yasmin Pacheco</p>
+                        <p id="nomePataDireita4" class="nomesDedos">Samuel Fernandes</p>
+                        <p id="nomePataDireita5" class="nomesDedos">Helena Matos</p>
+
+                    </div>
+                    <div class="dedo dedo03">
+
+                        <p id="nomePataDireita6" class="nomesDedos">Otávio Guimarães</p>
+                        <p id="nomePataDireita7" class="nomesDedos">Luana Tavares</p>
+                        <p id="nomePataDireita8" class="nomesDedos">Enzo Albuquerque</p>
+
+
+                    </div>
+                    <div class="dedo dedo04">
+
+                        <p id="nomePataDireita9" class="nomesDedos">Melissa Pinheiro</p>
+                        <p id="nomePataDireita10" class="nomesDedos">Murilo Peixoto</p>
+                        <p id="nomePataDireita11" class="nomesDedos">Lívia Dantas</p>
+
+                    </div>
+
+                </div>
+
+                <div class="almofada">
+
+                    <p id="nomePataDireita12" class="nomesAlmofada">Nicolas Queiroz</p>
+                    <p id="nomePataDireita13" class="nomesAlmofada">Valentina Rezende</p>
+                    <p id="nomePataDireita14" class="nomesAlmofada">Rodrigo Azevedo>
+                    <p id="nomePataDireita15" class="nomesAlmofada">Alice Neves</p>
+                    <p id="nomePataDireita16" class="nomesAlmofada">Leonardo Domingues</p>
+                    
+                </div>
+
+            </div>
+
         </div>
-
-        <div class="apoiadores__paw apoiadores__paw--center">
-
-            <span class="apoiadores__name apoiadores__name--xl">
-                Carlos
-            </span>
-
-            <span class="apoiadores__name apoiadores__name--lg">
-                Marina
-            </span>
-
-        </div>
-
-        <div class="apoiadores__paw apoiadores__paw--right">
-        </div>
-
-    </div>
 
     </section>
 
@@ -345,18 +431,13 @@
 
     <div class="empresas__content">
 
-        <h2 class="empresas__title">
-            Empresas Parceiras
-        </h2>
+        <h2 class="empresas__title">Instituições parceiras</h2>
 
         <div class="empresas__tier empresas__tier--gold">
 
             <a href="#" target="_blank">
 
-                <img
-                    src="Assets/Logos/logo1.png"
-                    class="empresas__logo empresas__logo--gold"
-                >
+                <img src="imgs/parceiros/ufc.webp" class="empresas__logo empresas__logo--gold">
 
             </a>
 

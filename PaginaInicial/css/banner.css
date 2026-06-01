@@ -1,0 +1,49 @@
+.banner__content{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 350px;
+    gap: 50px;
+    background: linear-gradient(135deg, #e452fa 0%, #f8bbd0 100%);
+
+}
+
+.banner__text{
+
+    text-align:center;
+
+}
+
+
+.img_banner{
+
+    width: 350px;
+    height: auto;
+    padding-top: 35px;
+
+}
+
+
+.banner__descricao{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    word-break: break-all;
+    text-align: center;
+    width: 30%;
+    height: 50%;
+
+}
+
+.banner__title{
+
+    font-size: 60px;
+
+}
+
+

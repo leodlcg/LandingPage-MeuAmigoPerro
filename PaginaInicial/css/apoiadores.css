@@ -1,51 +1,116 @@
 .apoiadores__content{
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     text-align:center;
 
 }
 
-.apoiadores__paw{
+.pata {
 
-    position:relative;
-
-    width:320px;
-    height:320px;
-
-    margin:auto;
-
-}
-
-.apoiadores__name{
-
-    position:absolute;
-
-    transition:
-        .4s;
+    display: block;
+    justify-items: center;
+    align-items: center;
+    width: clamp(350px, 40vw, 500px);
+    height: clamp(350px, 40vw, 500px);
+    color: #ffffff;
 
 }
 
-.apoiadores__name:hover{
+#pata01{
 
-    transform:
-        scale(1.2);
+    margin-top: 100px;
+    
+}
+
+#pata03{
+
+     margin-top: 100px;
 
 }
 
-.apoiadores__name--xl{
+.dedos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 50%;
+}
 
-    font-size:42px;
+.dedo {
+
+    display: block;
+    justify-items: center;
+    align-content: center;
+    overflow: hidden;
+
+    width: 35%;
+    height: 55%;
+    border-radius: 50%;
+    background-color: var(--color-secondary);
 
 }
 
-.apoiadores__name--lg{
+.dedo01 {
+    transform: rotate(-25deg);
+    margin-top: 40%;       
+}
 
-    font-size:30px;
+.dedo02 {
+    transform: rotate(-15deg);
+    margin-right: 2%;
+}
+
+.dedo03 {
+    transform: rotate(15deg);
+    margin-left: 2%;
+}
+
+.dedo04 {
+    transform: rotate(25deg);
+    margin-top: 40%;       
+}
+
+.almofada {
+
+    display: block;
+    justify-items: center;
+    align-content: center;
+    overflow: hidden;
+    width: 55%;
+    height: 45%;
+    background-color: var(--color-secondary);
+    border-radius: 50%;
+    
+}
+
+.nomesDedos {
+
+    width: 70%;
+    font-size: clamp(6px, 1.2vw, 14px);
+    box-sizing: border-box;
+    text-align: center;
+    padding: 4%;
+    line-height: 1;
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
 
 }
 
-.apoiadores__name--animate{
+.nomesAlmofada {
 
-    transform:
-        scale(1.25);
+    width: 70%;
+    font-size: clamp(6px, 1.2vw, 20px);
+    box-sizing: border-box;
+    text-align: center;
+    padding: 2%;
+    line-height: 1;
+    font-family: "Space Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
 
 }
+

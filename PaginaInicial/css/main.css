@@ -1,12 +1,13 @@
+
+@import url('./banner.css');
 @import url('./animais.css');
 @import url('./apoiadores.css');
 @import url('./eventos.css');
 @import url('./feitos.css');
-@import url('./global.css');
 @import url('./membros.css');
+@import url('./parceiros.css');
 @import url('./menu.css');
 @import url('./nucleos.css');
-@import url('./reset.css');
 @import url('./responsive.css');
 @import url('./rodape.css');
 @import url('./variables.css');

@@ -1,0 +1,85 @@
+#nucleos{
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    height: auto;
+
+}
+
+.nucleos_card{
+
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    text-decoration: none;
+    width: 250px;
+    height: auto;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background: linear-gradient(
+    135deg,
+    rgba(248, 245, 255, 0.95) 0%,
+    rgba(235, 228, 255, 0.90) 100%
+    );
+
+
+}
+
+.nucleos_card:hover{
+
+    transform: scale(0.9);
+
+}
+
+.nucleos_icon{
+
+    width: 70px;
+    height: auto;
+
+
+}
+
+.nucleos_text {
+  width: 90%;
+  opacity: 0.8;
+  color: black;
+  cursor: pointer;
+  font-size: 15px;
+  letter-spacing: .8px;
+  line-height: 20px;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media (max-width: 672px) {
+
+    
+    #nucleos{
+        width: 80%;
+        gap: 10px;
+        padding-top: 80px;
+
+    }
+    
+    .nucleos_card{
+
+        width: auto;
+        background: transparent;
+
+
+    }
+
+    .nucleos_text{
+
+        display: none;
+
+    }
+
+
+}

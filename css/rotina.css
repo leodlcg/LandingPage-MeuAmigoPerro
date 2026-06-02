@@ -6,7 +6,7 @@
     flex-direction: column;
     width: 100%;
     height: auto;
-    background-image: url(/imgs/rotina/Fundo.svg);
+    background-image: url(../imgs/rotina/Fundo.svg);
     background-repeat: no-repeat;
     background-size: cover ;
 
@@ -99,7 +99,7 @@
     height: clamp(10px, 8vw, 100px);
     border: none;
     background-color: transparent;
-    background-image: url("/imgs/rotina/SetaDireita.webp");
+    background-image: url("../imgs/rotina/SetaDireita.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-size: clamp(10px, 8vw, 100px);

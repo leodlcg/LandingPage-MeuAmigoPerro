@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/banner.css">
     <link rel="stylesheet" href="css/nucleos.css">
     <link rel="stylesheet" href="css/rotina.css">
+    <link rel="stylesheet" href="css/objetivo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geom:ital,wght@0,300..900;1,300..900&family=Indie+Flower&family=Special+Gothic:wght@400..700&display=swap" rel="stylesheet">
@@ -26,7 +27,7 @@
 
     <nav class="header_nav">
 
-        <a href="#eventos" class="header_link">Eventos</a>
+        <a href="#rotina" class="header_link">Galeria</a>
 
         <a href="#animais" class="header_link">Animais</a>
 
@@ -139,33 +140,42 @@
 
     <div class="carousel">
 
-            <div class="carousel_moldura_esquerda">
-
-                <img class="carousel_imgs" src="imgs/rotina/01.jpeg">
-                <h1 class="carousel_imgs_text">Simpósio - 2026</h1>
-
-            </div>
-
-            <button class="carousel_button_esquerda"></button>
-
-            <div class="carousel_moldura_centro">
-
-                <img class="carousel_imgs" src="imgs/rotina/01.jpeg">
-                <h1 class="carousel_imgs_text">Simpósio - 2026</h1>
-
-            </div>
-
-            <button class="carousel_button_direita"></button>
-
-            <div class="carousel_moldura_direita">
-
-                <img class="carousel_imgs" src="imgs/rotina/01.jpeg">
-                <h1 class="carousel_imgs_text">Simpósio - 2026</h1>
-
-            </div>
-
+        <div class="carousel_moldura_esquerda" onclick="anterior()">
+            <img id="img-esquerda" class="carousel_imgs" src="imgs/rotina/fotos/3.jpeg">
+            <h1 id="texto-esquerda" class="carousel_imgs_text">Simpósio - 2026</h1>
         </div>
+
+        <button class="carousel_button_esquerda" onclick="anterior()"></button>
+
+        <div class="carousel_moldura_centro">
+            <img id="img-centro" class="carousel_imgs" src="imgs/rotina/fotos/1.jpeg">
+            <h1 id="texto-centro" class="carousel_imgs_text">Simpósio - 2026</h1>
+        </div>
+
+        <button class="carousel_button_direita" onclick="proximo()"></button>
+
+        <div class="carousel_moldura_direita" onclick="proximo()">
+            <img id="img-direita" class="carousel_imgs" src="imgs/rotina/fotos/2.jpeg">
+            <h1 id="texto-direita" class="carousel_imgs_text">Simpósio - 2026</h1>
+        </div>
+
+    </div>
 
 </section>
 
+
+<section id="objetivo">
+
+
+
+
+
+
+</section>
+
+</body>
+
+<script src="js/rotina.js"></script>
+
+</html>
 

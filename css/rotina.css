@@ -28,7 +28,7 @@
     justify-content: center;
     flex-direction: column;
     width: 40%;
-    height: auto;
+    height: 450px;
     padding: 2vw;
     background-color: white;
     border: 30px;
@@ -44,7 +44,7 @@
     justify-content: center;
     flex-direction: column;
     width: 25%;
-    height: auto;
+    height: 300px;
     padding: 2vw;
     background-color: white;
     border: 30px;
@@ -55,11 +55,17 @@
 
 }
 
-.carousel_moldura_esquerda:hover,
 .carousel_moldura_direita:hover{
 
+    opacity: 0.8; 
+    transform: perspective(1000px) rotateY(20deg);
 
-    opacity: 0.5; 
+}
+
+.carousel_moldura_esquerda:hover{
+
+    opacity: 0.8; 
+    transform: perspective(1000px) rotateY(-20deg);
 
 }
 
@@ -70,7 +76,7 @@
     justify-content: center;
     flex-direction: column;
     width: 25%;
-    height: auto;
+    height: 300px;
     padding: 2vw;
     background-color: white;
     border: 30px;
@@ -82,12 +88,15 @@
 }
 
 .carousel_imgs{
-
     width: 100%;
-    height: auto;
+    height: 80%;
+    object-fit: cover;
     border-radius: 20px;
+    transition: opacity 0.4s ease;
+}
 
-
+.fade{
+    opacity: 0;
 }
 
 .carousel_button_direita{

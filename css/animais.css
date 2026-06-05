@@ -1,0 +1,36 @@
+#animais {
+
+    overflow: hidden;
+    width: 100%;
+   height: auto;
+    background: linear-gradient(135deg, #e452fa 0%, #f8bbd0 100%);
+}
+
+.animais_content {
+    overflow: hidden;
+    width: 100%;
+}
+ 
+.animais_track {
+    display: flex;
+    width: max-content;
+    gap: 15px;
+    animation: animaisScroll 30s linear infinite;
+}
+
+.animais_image {
+    width: clamp(150px, 25vw, 300px);
+    height: clamp(150px, 25vw, 300px);
+    object-fit: cover;
+    border-radius: 20px;
+    flex-shrink: 0;
+}
+
+@keyframes animaisScroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}

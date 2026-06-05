@@ -164,18 +164,225 @@
 </section>
 
 
-<section id="objetivo">
+<section id="objetivos">
+
+    <h1 class="objetivos_titulo font-indie-flower-banner">
+        Nossa Metodologia
+    </h1>
+
+    <div class="objetivos_container">
+
+        <div class="ciclo">
 
 
+            <svg class="ciclo_seta_svg" viewBox="0 0 516 516" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <marker id="seta" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+                        <path d="M0,0 L0,6 L6,3 Z" fill="#e452fa"/>
+                    </marker>
+                </defs>
+                <circle
+                    class="ciclo_trilho"
+                    cx="258" cy="258" r="250"
+                    fill="none"
+                    stroke="#f8bbd0"
+                    stroke-width="8"
+                />
+                <circle
+                    class="ciclo_seta_path"
+                    cx="258" cy="258" r="250"
+                    fill="none"
+                    stroke="#e452fa"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                    marker-end="url(#seta)"
+                />
+            </svg>
 
+            <button id="etapa1" class="etapa font-hanga-one-regular-italic-nucleos" onclick="catalogar()">
+                <img src="imgs/objetivo/Catalogar.png" alt="">
+                <span class="etapa_text">Catalogar</span>
+            </button>
 
+            <button id="etapa2" class="etapa font-hanga-one-regular-italic-nucleos" onclick="capturar()">
+                <img src="imgs/objetivo/Capturar.webp" alt="">
+                <span class="etapa_text">Capturar</span>
+            </button>
 
+            <button id="etapa3" class="etapa font-hanga-one-regular-italic-nucleos"  onclick="cuidar()">
+                <img src="imgs/objetivo/Cuidar.webp" alt="">
+                <span class="etapa_text">Cuidar</span>
+            </button>
+
+            <button id="etapa4" class="etapa font-hanga-one-regular-italic-nucleos" onclick="socializar()">
+                <img src="imgs/objetivo/Socializar.webp" alt="">
+                <span class="etapa_text">Socializar</span>
+            </button>
+
+            <button id="etapa5" class="etapa font-hanga-one-regular-italic-nucleos" onclick="adotar()">
+                <img src="imgs/objetivo/Adotar.png" alt="">
+                <span class="etapa_text">Adotar</span>
+            </button>
+
+            <button id="etapa6" class="etapa font-hanga-one-regular-italic-nucleos" onclick="retornar()">
+                <img src="imgs/objetivo/Retornar.webp" alt="">
+                <span class="etapa_text">Retornar</span>
+            </button>
+
+            <button class="ciclo_centro">
+                <img src="imgs/objetivo/Coracao.webp" alt="">
+            </button>
+
+        </div>
+
+        <div id="quadro_paineis">
+
+            <button class="objetivo_button_anterior" onclick="objetivoAnterior()"></button>
+
+            <div id="painel_catalogar" class="painel">
+
+                <img
+                    class="painel_imagem"
+                    src="imgs/catalogacao.jpg"
+                    alt=""
+                >
+
+                <div class="painel_texto">
+
+                    <h2>Catalogar</h2>
+
+                    <p>
+                        Identificamos o animal, registramos informações
+                        importantes e avaliamos suas condições de saúde
+                        para iniciar o processo de cuidado.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div id="painel_capturar" class="painel">
+
+                <img
+                    class="painel_imagem"
+                    src="imgs/catalogacao.jpg"
+                    alt=""
+                >
+
+                <div class="painel_texto">
+
+                    <h2>Capturar</h2>
+
+                    <p>
+                        Identificamos o animal, registramos informações
+                        importantes e avaliamos suas condições de saúde
+                        para iniciar o processo de cuidado.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div id="painel_cuidar" class="painel">
+
+                <img
+                    class="painel_imagem"
+                    src="imgs/catalogacao.jpg"
+                    alt=""
+                >
+
+                <div class="painel_texto">
+
+                    <h2>Cuidar</h2>
+
+                    <p>
+                        Identificamos o animal, registramos informações
+                        importantes e avaliamos suas condições de saúde
+                        para iniciar o processo de cuidado.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div id="painel_socializar" class="painel">
+
+                <img
+                    class="painel_imagem"
+                    src="imgs/catalogacao.jpg"
+                    alt=""
+                >
+
+                <div class="painel_texto">
+
+                    <h2>Socializar</h2>
+
+                    <p>
+                        Identificamos o animal, registramos informações
+                        importantes e avaliamos suas condições de saúde
+                        para iniciar o processo de cuidado.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div id="painel_adotar" class="painel">
+
+                <img
+                    class="painel_imagem"
+                    src="imgs/catalogacao.jpg"
+                    alt=""
+                >
+
+                <div class="painel_texto">
+
+                    <h2>Adotar</h2>
+
+                    <p>
+                        Identificamos o animal, registramos informações
+                        importantes e avaliamos suas condições de saúde
+                        para iniciar o processo de cuidado.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div id="painel_retornar" class="painel">
+
+                <img
+                    class="painel_imagem"
+                    src="imgs/catalogacao.jpg"
+                    alt=""
+                >
+
+                <div class="painel_texto">
+
+                    <h2>Retornar</h2>
+
+                    <p>
+                        Identificamos o animal, registramos informações
+                        importantes e avaliamos suas condições de saúde
+                        para iniciar o processo de cuidado.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <button class="objetivo_button_proximo" onclick="objetivoProximo()"></button>
+
+        </div>
+
+    </div>
 
 </section>
 
 </body>
 
 <script src="js/rotina.js"></script>
+<script src="js/objetivo.js"></script>
 
 </html>
 

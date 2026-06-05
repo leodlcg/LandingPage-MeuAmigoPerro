@@ -5,6 +5,7 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
+    padding-bottom: 100px;
     height: auto;
     background-image: url(../imgs/rotina/fundo.svg);
     background-repeat: no-repeat;

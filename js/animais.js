@@ -1,36 +1,9 @@
-function verificarImagem(src) {
-    return new Promise((resolve) => {
-        const img = new Image();
+const quantidadeTotalImagens = 9;
 
-        img.onload = () => resolve(true);
-        img.onerror = () => resolve(false);
-
-        img.src = src;
-    });
-}
-
-async function contarImagens() {
-    let contador = 1;
-
-    while (true) {
-        const existe = await verificarImagem(
-            `imgs/animais/${contador}.webp`
-        );
-
-        if (!existe) {
-            break;
-        }
-
-        contador++;
-    }
-
-    return contador - 1;
-}
-
-function randomNumber(totalImagens) {
+function randomNumber() {
     const numbers = [];
 
-    for (let i = 1; i <= totalImagens; i++) {
+    for (let i = 0; i < quantidadeTotalImagens; i++) {
         numbers.push(i);
     }
 
@@ -43,11 +16,11 @@ function randomNumber(totalImagens) {
 }
 
 async function inserirHTML() {
-    const totalImagens = await contarImagens();
-    const numbers = randomNumber(totalImagens);
+
+    const numbers = randomNumber();
     const track = document.querySelector(".animais_track");
 
-    for (let i = 0; i < totalImagens; i++) {
+    for (let i = 0; i < quantidadeTotalImagens; i++) {
         const img = document.createElement("img");
         img.src = `imgs/animais/${numbers[i]}.webp`;
         img.classList.add("animais_image");

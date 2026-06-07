@@ -10,11 +10,13 @@
 }
 
 .objetivos_titulo {
+    
     margin-bottom: 80px;
     color: black;
-    font-size: clamp(50px, 10vw, 100px);
+    font-size: clamp(0px, 15vw, 100px);
     align-self: flex-end;
     padding-right: clamp(0px, 10vw, 80px);
+    
 }
 
 .objetivos_container {
@@ -226,17 +228,23 @@
 
 }
 
-@media (max-width: 672px) {
-
-    #objetivos {
-        padding: 60px 0;
-    }
+@media (max-width: 833px) {
 
     .objetivos_titulo {
         margin-left: 0;
         padding-right: 0;
         align-self: center;
         text-align: center;
+        line-height: clamp(0px, 15vw, 100px);
+    }
+
+    
+}
+
+@media (max-width: 672px) {
+
+    #objetivos {
+        padding: 60px 0;
     }
 
     .objetivos_container {

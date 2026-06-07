@@ -141,11 +141,11 @@
 
 }
 
-.title_rotina{
+.rotina_titulo{
 
 
     margin-top: clamp(0px, 10vw, 100px);
-    font-size: clamp(50px, 10vw, 100px);
+    font-size: clamp(0px, 15vw, 100px);
     line-height: 80px;
 
 

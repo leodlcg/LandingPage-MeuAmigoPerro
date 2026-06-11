@@ -2,7 +2,7 @@
 
     overflow: hidden;
     width: 100%;
-   height: auto;
+    height: auto;
     background: linear-gradient(135deg, #e452fa 0%, #f8bbd0 100%);
 }
 
@@ -19,8 +19,8 @@
 }
 
 .animais_image {
-    width: clamp(150px, 25vw, 300px);
-    height: clamp(150px, 25vw, 300px);
+    width: 300px;
+    height: 300px;
     object-fit: cover;
     border-radius: 20px;
     flex-shrink: 0;

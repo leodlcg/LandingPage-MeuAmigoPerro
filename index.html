@@ -13,6 +13,9 @@
     <link rel="stylesheet" href="css/animais.css">
     <link rel="stylesheet" href="css/voluntarios.css">
     <link rel="stylesheet" href="css/apoiadores.css">
+    <link rel="stylesheet" href="css/empresas.css">
+    <link rel="stylesheet" href="css/doe.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geom:ital,wght@0,300..900;1,300..900&family=Indie+Flower&family=Special+Gothic:wght@400..700&display=swap" rel="stylesheet">
@@ -26,25 +29,40 @@
     <div class="header_icon">
         <a href="#banner" class="header_link"><img class="img_icon" src="imgs/header/Logo.webp" alt=""></a>
         <a href="#banner" class="header_link img_icon_name">MeuAmigoPerro</a>
+        <a href="#feitos" class="header_link login_mobile">Login</a>
     </div>
 
+    <!-- Nav desktop (visível acima de 672px) -->
     <nav class="header_nav">
-
         <a href="#rotina" class="header_link">Seja-Voluntário</a>
-
         <a href="#animais" class="header_link">Doe</a>
-
         <a href="#membros" class="header_link">Metodologia</a>
-
         <a href="#apoiadores" class="header_link">Apoiadores</a>
-
         <a href="#empresas" class="header_link">Contato</a>
-
         <a href="#feitos" class="header_link">Login</a>
-
     </nav>
 
+    <!-- Botão hambúrguer (visível apenas em mobile) -->
+    <button class="header_hamburger" id="hamburgerBtn" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
 </header>
+
+<!-- Overlay escurecido -->
+<div class="drawer_overlay" id="drawerOverlay"></div>
+
+<!-- Drawer lateral -->
+<nav class="drawer" id="drawer" aria-hidden="true">
+    <a href="#rotina" class="header_link">Seja-Voluntário</a>
+    <a href="#animais" class="header_link">Doe</a>
+    <a href="#membros" class="header_link">Metodologia</a>
+    <a href="#apoiadores" class="header_link">Apoiadores</a>
+    <a href="#empresas" class="header_link">Contato</a>
+    <a href="#feitos" class="header_link">Login</a>
+</nav>
 
 
 
@@ -393,11 +411,13 @@
 
     <h1 class="voluntarios_titulo font-indie-flower-banner">Voluntarios</h1>
 
-        <div id="content_voluntarios" class="font-indie-flower-banner">
+    <div id="content_voluntarios" class="font-indie-flower-banner">
 
-            <!-- section construida pelo JS  -->
+        <!-- section construida pelo JS  -->
 
-        </div>
+    </div>
+
+    <button class="learn-more font-indie-flower-banner">QUERO SER VOLÚNTARIO</button>
 
     <img id="onda_voluntario_baixo" class="ondas_voluntarios" src="imgs/voluntarios/Onda.png">
 
@@ -406,6 +426,7 @@
 <section id="apoiadores">
 
     <h1 class="apoiadores_titulo font-indie-flower-banner">Apoiadores</h1>
+    <h1 id="text_mes_apoiadores_vertical" class="font-indie-flower-banner"></h1>
 
         <div class="content_apoiadores">
  
@@ -561,18 +582,105 @@
 
         </div>
 
-        <h1 id="text_mes_apoiadores_vertical" class="font-indie-flower-banner"></h1>
+    <section id="empresas" class="empresas">
+
+        <div class="empresas_content">
+            <div class="empresas_track">
+
+
+
+            </div>
+        </div>
+
+    </section>
 
 </section>
+
+<section id="doe">
+
+        <img id="onda_doe_cima" class="ondas_doe" src="imgs/doe/OndaCima.png">
+
+        <div id="content_doe" class="font-indie-flower-banner">
+
+            
+            <img class="img_doe" src="imgs/doe/Teco.png">
+
+            <div class="card_doe">
+
+                <span class="card_title">DOE VIA PIX</span>
+                <img class="QR_doe" src="imgs/doe/QR.png">
+                <h1 class="chave_pix">meuamigoperro@gmail.com</h1>
+
+            </div>
+
+        </div>
+
+    <img id="onda_doe_baixo" class="ondas_doe" src="imgs/doe/OndaBaixo.png">
+
+</section>
+
+<footer id="rodape">
+ 
+    <div id="rodape_grid">
+ 
+      <!-- Coluna 1 – Sobre -->
+      <div class="rodape_col">
+        <span class="rodape_col_titulo">Sobre</span>
+        <p>Projeto criado com ❤️ para apoiar quem mais precisa.</p>
+        <p>Toda doação faz a diferença.</p>
+      </div>
+ 
+      <!-- Coluna 2 – Links -->
+      <div class="rodape_col">
+        <span class="rodape_col_titulo">Links</span>
+        <a href="#">Início</a>
+        <a href="#">Como Doar</a>
+        <a href="#">Transparência</a>
+        <a href="#">Contato</a>
+      </div>
+ 
+      <!-- Coluna 3 – Contato -->
+      <div class="rodape_col">
+        <span class="rodape_col_titulo">Contato</span>
+        <p>📧 contato@projeto.com</p>
+        <p>📍 Brasil</p>
+        <p>📱 (88) 99999-0000</p>
+      </div>
+ 
+      <!-- Coluna 4 – Redes Sociais -->
+      <div class="rodape_col">
+        <span class="rodape_col_titulo">Redes</span>
+        <div class="rodape_social">
+          <a href="#" title="Instagram"><img class="rodape_img" src="imgs/footer/instagram.png"></a>
+          <a href="#" title="Linkedin"><img class="rodape_img" src="imgs/footer/linkedin.png"></a>
+          <a href="#" title="WhatsApp"><img class="rodape_img"src="imgs/footer/whatsapp.png"></a>
+          <a href="#" title="YouTube"><img class="rodape_img" src="imgs/footer/youtube.png"></a>
+        </div>
+      </div>
+ 
+    </div>
+ 
+    <div class="rodape_divisor"></div>
+ 
+    <div id="rodape_bottom">
+      <p>© 2025 <span class="glitch">PROJETO</span>. Todos os direitos reservados.</p>
+      <p>Feito com <span>💜</span> e muito café.</p>
+    </div>
+ 
+</footer>
 
 
 </body>
 
-<script src="js/rotina.js" defer></script>></script>
-<script src="js/objetivo.js" defer></script>></script>
-<script src="js/animais.js" defer></script>></script>
-<script src="js/voluntarios.js" defer></script>></script>
-<script src="js/apoiadores.js" defer></script>></script>
+<script src="js/header.js" defer></script>>
+<script src="js/rotina.js" defer></script>>
+<script src="js/objetivo.js" defer></script>>
+<script src="js/animais.js" defer></script>
+<script src="js/voluntarios.js" defer></script>
+<script src="js/apoiadores.js" defer></script>
+<script src="js/empresas.js" defer></script>>
+<script src="js/doe.js" defer></script>>
+<script src="js/footer.js" defer></script>>
 
 </html>
 

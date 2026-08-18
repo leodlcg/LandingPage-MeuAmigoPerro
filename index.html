@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeuAmigoPerro</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/nucleos.css">
+    <link rel="stylesheet" href="css/rotina.css">
+    <link rel="stylesheet" href="css/objetivo.css">
+    <link rel="stylesheet" href="css/animais.css">
+    <link rel="stylesheet" href="css/voluntarios.css">
+    <link rel="stylesheet" href="css/apoiadores.css">
+    <link rel="stylesheet" href="css/empresas.css">
+    <link rel="stylesheet" href="css/doe.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geom:ital,wght@0,300..900;1,300..900&family=Indie+Flower&family=Special+Gothic:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+
+<header class="header font-geom-header">
+
+    <div class="header_icon">
+        <a href="#banner" class="header_link"><img class="img_icon" src="imgs/header/Logo.webp" alt=""></a>
+        <a href="#banner" class="header_link img_icon_name">MeuAmigoPerro</a>
+    </div>
+
+    <!-- Nav desktop (visível acima de 672px) -->
+    <nav class="header_nav">
+        <a href="#rotina" class="header_link">Dia a Dia</a>
+        <a href="#rotina" class="header_link">Voluntários</a>
+        <a href="#membros" class="header_link">Metodologia</a>
+        <a href="#animais" class="header_link">Doe</a>
+        <a href="#apoiadores" class="header_link">Apoiadores</a>
+        <a href="#empresas" class="header_link">Contato</a>
+    </nav>
+
+    <!-- Botão hambúrguer (visível apenas em mobile) -->
+    <button class="header_hamburger" id="hamburgerBtn" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+</header>
+
+<!-- Overlay escurecido -->
+<div class="drawer_overlay" id="drawerOverlay"></div>
+
+<!-- Drawer lateral -->
+<nav class="drawer" id="drawer" aria-hidden="true">
+       <a href="#rotina" class="header_link">Dia a Dia</a>
+        <a href="#rotina" class="header_link">Voluntários</a>
+        <a href="#membros" class="header_link">Metodologia</a>
+        <a href="#animais" class="header_link">Doe</a>
+        <a href="#apoiadores" class="header_link">Apoiadores</a>
+        <a href="#empresas" class="header_link">Contato</a>
+</nav>
+
+
+
+<section id="banner">
+
+    <h1 class="banner_title font-indie-flower-banner">UMA REDE<br>DE ESPERANÇA</h1>
+
+    <img class="img_banner" src="imgs/banner/Teco.webp">
+
+</section>
+
+
+
+<section id="rotina">
+
+    <div id="nucleos">
+
+        <a href="#banner" class="nucleos_card font-hanga-one-regular-italic-nucleos">
+
+            <img src="imgs/nucleos/NAJ.webp"
+                class="nucleos_icon"
+                alt="Núcleo Bem-estar Animal">
+
+            <span class="nucleos_text">
+                Administrativo e<br>Jurídico
+            </span>
+
+        </a>
+
+
+        <a href="#banner" class="nucleos_card font-hanga-one-regular-italic-nucleos">
+
+            <img src="imgs/nucleos/NCC.webp"
+                class="nucleos_icon"
+                alt="Núcleo Bem-estar Animal">
+
+            <span class="nucleos_text">
+                Comunicação e<br>Conscientização
+            </span>
+
+        </a>
+
+
+        <a href="#banner" class="nucleos_card font-hanga-one-regular-italic-nucleos">
+
+            <img src="imgs/nucleos/NCRP.webp"
+                class="nucleos_icon"
+                alt="Núcleo Bem-estar Animal">
+
+            <span class="nucleos_text">
+                Recursos e<br>Parcerias
+            </span>
+
+        </a>
+
+
+        <a href="#banner" class="nucleos_card font-hanga-one-regular-italic-nucleos">
+
+            <img src="imgs/nucleos/NIO.webp"
+                class="nucleos_icon"
+                alt="Núcleo Bem-estar Animal">
+
+            <span class="nucleos_text">
+                Infraestrutura e<br>Operações
+            </span>
+
+        </a>
+
+        <a href="#banner" class="nucleos_card font-hanga-one-regular-italic-nucleos">
+
+            <img src="imgs/nucleos/NTI.webp"
+                class="nucleos_icon"
+                alt="Núcleo Bem-estar Animal">
+
+            <span class="nucleos_text">
+                Tecnologia da<br>Informação
+            </span>
+
+        </a>
+
+        <a href="#banner" class="nucleos_card font-hanga-one-regular-italic-nucleos">
+
+            <img src="imgs/nucleos/NBA.webp"
+                class="nucleos_icon"
+                alt="Núcleo Bem-estar Animal">
+
+            <span class="nucleos_text">
+                Bem-estar<br>Animal
+            </span>
+
+        </a>
+
+    </div>
+
+    <h1 class="rotina_titulo font-indie-flower-banner">Dia a dia</h1>
+
+    <div class="carousel">
+
+        <div class="carousel_moldura_esquerda" onclick="anterior()">
+            <img id="img-esquerda" class="carousel_imgs" src="imgs/rotina/fotos/3.jpeg">
+            <h1 id="texto-esquerda" class="carousel_imgs_text">Simpósio - 2026</h1>
+        </div>
+
+        <button class="carousel_button_esquerda" onclick="anterior()"></button>
+
+        <div class="carousel_moldura_centro">
+            <img id="img-centro" class="carousel_imgs" src="imgs/rotina/fotos/1.jpeg">
+            <h1 id="texto-centro" class="carousel_imgs_text">Simpósio - 2026</h1>
+        </div>
+
+        <button class="carousel_button_direita" onclick="proximo()"></button>
+
+        <div class="carousel_moldura_direita" onclick="proximo()">
+            <img id="img-direita" class="carousel_imgs" src="imgs/rotina/fotos/2.jpeg">
+            <h1 id="texto-direita" class="carousel_imgs_text">Simpósio - 2026</h1>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="objetivos">
+
+    <h1 class="objetivos_titulo font-indie-flower-banner">Nossa Metodologia</h1>
+
+    <div class="objetivos_container">
+
+        <div class="ciclo">
+
+            <svg class="ciclo_seta_svg" viewBox="0 0 516 516" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <marker id="seta" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+                        <path d="M0,0 L0,6 L6,3 Z" fill="#e452fa"/>
+                    </marker>
+                </defs>
+                <circle
+                    class="ciclo_trilho"
+                    cx="258" cy="258" r="250"
+                    fill="none"
+                    stroke="#f8bbd0"
+                    stroke-width="8"
+                />
+                <circle
+                    class="ciclo_seta_path"
+                    cx="258" cy="258" r="250"
+                    fill="none"
+                    stroke="#e452fa"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                    marker-end="url(#seta)"
+                />
+            </svg>
+
+            <button id="etapa1" class="etapa font-hanga-one-regular-italic-nucleos" onclick="catalogar()">
+                <img src="imgs/objetivo/catalogarIcon.png" alt="">
+                <span class="etapa_text">Catalogar</span>
+            </button>
+
+            <button id="etapa2" class="etapa font-hanga-one-regular-italic-nucleos" onclick="capturar()">
+                <img src="imgs/objetivo/capturarIcon.webp" alt="">
+                <span class="etapa_text">Capturar</span>
+            </button>
+
+            <button id="etapa3" class="etapa font-hanga-one-regular-italic-nucleos"  onclick="cuidar()">
+                <img src="imgs/objetivo/cuidarIcon.webp" alt="">
+                <span class="etapa_text">Cuidar</span>
+            </button>
+
+            <button id="etapa4" class="etapa font-hanga-one-regular-italic-nucleos" onclick="socializar()">
+                <img src="imgs/objetivo/socializarIcon.webp" alt="">
+                <span class="etapa_text">Socializar</span>
+            </button>
+
+            <button id="etapa5" class="etapa font-hanga-one-regular-italic-nucleos" onclick="adotar()">
+                <img src="imgs/objetivo/adotarIcon.png" alt="">
+                <span class="etapa_text">Adotar</span>
+            </button>
+
+            <button id="etapa6" class="etapa font-hanga-one-regular-italic-nucleos" onclick="retornar()">
+                <img src="imgs/objetivo/retornarIcon.webp" alt="">
+                <span class="etapa_text">Retornar</span>
+            </button>
+
+            <button class="ciclo_centro">
+                <img src="imgs/objetivo/coracaoIcon.webp" alt="">
+            </button>
+
+        </div>
+
+        <div id="quadro_paineis">
+
+            <button class="objetivo_button_anterior" onclick="objetivoAnterior()"></button>
+
+            <div id="painel_catalogar" class="painel">
+
+                <img
+                    class="painel_imagem"
+                    src="imgs/objetivo/Catalogar.webp"
+                    alt=""
+                >
+
+                <div class="painel_texto">
+
+                    <h2>Catalogar</h2>
+
+                    <p>
+                        Identificamos o animal, registramos informações
+                        importantes e avaliamos suas condições de saúde
+                        para iniciar o processo de cuidado.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div id="painel_capturar" class="painel">
+
+                <img
+                    class="painel_imagem"
+                    src="imgs/objetivo/Capturar.webp"
+                    alt=""
+                >
+
+                <div class="painel_texto">
+
+                    <h2>Capturar</h2>
+
+                    <p>
+                        Identificamos o animal, registramos informações
+                        importantes e avaliamos suas condições de saúde
+                        para iniciar o processo de cuidado.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div id="painel_cuidar" class="painel">
+
+                <img
+                    class="painel_imagem"
+                    src="imgs/objetivo/Cuidar.webp"
+                    alt=""
+                >
+
+                <div class="painel_texto">
+
+                    <h2>Cuidar</h2>
+
+                    <p>
+                        Identificamos o animal, registramos informações
+                        importantes e avaliamos suas condições de saúde
+                        para iniciar o processo de cuidado.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div id="painel_socializar" class="painel">
+
+                <img
+                    class="painel_imagem"
+                    src="imgs/objetivo/Socializar.webp"
+                    alt=""
+                >
+
+                <div class="painel_texto">
+
+                    <h2>Socializar</h2>
+
+                    <p>
+                        Identificamos o animal, registramos informações
+                        importantes e avaliamos suas condições de saúde
+                        para iniciar o processo de cuidado.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div id="painel_adotar" class="painel">
+
+                <img
+                    class="painel_imagem"
+                    src="imgs/objetivo/Adotar.webp"
+                    alt=""
+                >
+
+                <div class="painel_texto">
+
+                    <h2>Adotar</h2>
+
+                    <p>
+                        Identificamos o animal, registramos informações
+                        importantes e avaliamos suas condições de saúde
+                        para iniciar o processo de cuidado.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div id="painel_retornar" class="painel">
+
+                <img
+                    class="painel_imagem"
+                    src="imgs/objetivo/Retornar.webp"
+                    alt=""
+                >
+
+                <div class="painel_texto">
+
+                    <h2>Retornar</h2>
+
+                    <p>
+                        Identificamos o animal, registramos informações
+                        importantes e avaliamos suas condições de saúde
+                        para iniciar o processo de cuidado.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <button class="objetivo_button_proximo" onclick="objetivoProximo()"></button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="animais" class="animais">
+
+    <div class="animais_content">
+        <div class="animais_track"></div>
+    </div>
+
+</section>
+
+<section id="voluntarios">
+
+    <img id="onda_voluntario_cima" class="ondas_voluntarios" src="imgs/voluntarios/Onda.png">
+
+    <h1 class="voluntarios_titulo font-indie-flower-banner">Voluntarios</h1>
+
+    <div id="content_voluntarios" class="font-indie-flower-banner">
+
+        <!-- div construida pelo JS  -->
+
+    </div>
+
+    <button class="cta">
+  <span class="hover-underline-animation"> Quero ser voluntário </span>
+  <svg
+    id="arrow-horizontal"
+    xmlns="http://www.w3.org/2000/svg"
+    width="30"
+    height="10"
+    viewBox="0 0 46 16"
+  >
+    <path
+      id="Path_10"
+      data-name="Path 10"
+      d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+      transform="translate(30)"
+    ></path>
+  </svg>
+    </button>
+
+    <img id="onda_voluntario_baixo" class="ondas_voluntarios" src="imgs/voluntarios/Onda.png">
+
+</section>
+
+<section id="apoiadores">
+
+    <h1 class="apoiadores_titulo font-indie-flower-banner">Apoiadores</h1>
+    <h1 id="text_mes_apoiadores_vertical" class="font-indie-flower-banner"></h1>
+
+        <div class="content_apoiadores">
+ 
+            <img id="pata_amarela" class="img_patas" src="imgs/apoiadores/PataAmarela.webp">
+            <img id="pata_azul" class="img_patas" src="imgs/apoiadores/PataAzul.webp">
+            <img id="pata_rosa" class="img_patas" src="imgs/apoiadores/PataRosa.webp">
+
+        </div>
+
+    <section id="empresas" class="empresas">
+
+        <div class="empresas_content">
+            <div class="empresas_track">
+
+                <!-- div construida pelo JS  -->
+
+            </div>
+        </div>
+
+    </section>
+
+</section>
+
+<section id="doe">
+
+        <img id="onda_doe_cima" class="ondas_doe" src="imgs/doe/OndaCima.png">
+
+        <div id="content_doe" class="font-indie-flower-banner">
+
+            
+            <img class="img_doe" src="imgs/doe/Teco.png">
+
+            <div class="card_doe">
+
+                <span class="card_title">DOE VIA PIX</span>
+                <img class="QR_doe" src="imgs/doe/QR.png">
+                <h1 class="chave_pix">meuamigoperro@gmail.com</h1>
+
+            </div>
+
+        </div>
+
+    <img id="onda_doe_baixo" class="ondas_doe" src="imgs/doe/OndaBaixo.png">
+
+</section>
+
+<footer id="rodape">
+ 
+    <div id="rodape_grid">
+ 
+      <!-- Coluna 1 – Sobre -->
+      <div class="rodape_col">
+        <span class="rodape_col_titulo">Sobre</span>
+        <p>Projeto criado com ❤️ para apoiar quem mais precisa.</p>
+        <p>Toda doação faz a diferença.</p>
+      </div>
+ 
+      <!-- Coluna 2 – Links -->
+      <div class="rodape_col">
+        <span class="rodape_col_titulo">Links</span>
+        <a href="#">Início</a>
+        <a href="#">Como Doar</a>
+        <a href="#">Transparência</a>
+        <a href="#">Contato</a>
+      </div>
+ 
+      <!-- Coluna 3 – Contato -->
+      <div class="rodape_col">
+        <span class="rodape_col_titulo">Contato</span>
+        <p>📧 contato@projeto.com</p>
+        <p>📍 Brasil</p>
+        <p>📱 (88) 99999-0000</p>
+      </div>
+ 
+      <!-- Coluna 4 – Redes Sociais -->
+      <div class="rodape_col">
+        <span class="rodape_col_titulo">Redes</span>
+        <div class="rodape_social">
+          <a href="#" title="Instagram"><img class="rodape_img" src="imgs/footer/instagram.png"></a>
+          <a href="#" title="Linkedin"><img class="rodape_img" src="imgs/footer/linkedin.png"></a>
+          <a href="#" title="WhatsApp"><img class="rodape_img"src="imgs/footer/whatsapp.png"></a>
+          <a href="#" title="YouTube"><img class="rodape_img" src="imgs/footer/youtube.png"></a>
+        </div>
+      </div>
+ 
+    </div>
+ 
+    <div class="rodape_divisor"></div>
+ 
+    <div id="rodape_bottom">
+      <p>© 2025 <span class="glitch">PROJETO</span>. Todos os direitos reservados.</p>
+      <p>Feito com <span>💜</span> e muito café.</p>
+    </div>
+ 
+</footer>
+
+
+</body>
+
+<script src="js/header.js" defer></script>>
+<script src="js/rotina.js" defer></script>>
+<script src="js/objetivo.js" defer></script>>
+<script src="js/animais.js" defer></script>
+<script src="js/voluntarios.js" defer></script>
+<script src="js/apoiadores.js" defer></script>
+<script src="js/empresas.js" defer></script>>
+<script src="js/doe.js" defer></script>>
+<script src="js/footer.js" defer></script>>
+
+</html>
+

@@ -1,0 +1,61 @@
+#empresas {
+    
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    bottom: 0;
+    z-index: 10;
+
+}
+
+.empresas_content {
+
+    position: absolute;
+    margin-top: -35px;
+    overflow: hidden;
+    width: 100%;
+
+}
+
+.empresas_track {
+
+    display: flex;
+    align-items: center;
+    width: max-content;
+    gap: 50px;
+    animation: empresasScroll 30s linear infinite;
+
+}
+
+.empresas_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.empresas_img {
+    width: auto;           /* deixa a largura se adaptar à proporção */
+    height: clamp(60px, 10vw, 100px); /* controla só a altura */
+    max-width: 400px;
+    object-fit: contain;   /* mantém proporção sem cortar */
+    flex-shrink: 0;
+}
+
+@keyframes empresasScroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width:700px) {
+
+    .empresas_content {
+
+    margin-top: -20px;
+
+    }
+    
+}

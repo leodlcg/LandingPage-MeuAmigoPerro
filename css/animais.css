@@ -1,0 +1,139 @@
+@import url("global.css");
+
+#animais {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    width: 100%;
+    height: auto;
+    background: var(--gradiente-principal);
+
+}
+
+.animais_content {
+
+    overflow: hidden;
+    width: 100%;
+
+}
+ 
+.animais_track {
+
+    display: flex;
+    width: max-content;
+    gap: 15px;
+    animation: animaisScroll 30s linear infinite;
+
+}
+
+.animais_image {
+
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    flex-shrink: 0;
+    
+}
+
+.link_catalogo{
+
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: var(--fonte-titulo);
+    padding-top: 50px;
+    padding-bottom: 7px;
+    margin-right: 1050px;
+
+}
+
+.link_catalogo span {
+
+    padding-bottom: 7px;
+    letter-spacing: 4px;
+    font-size: 24px;
+    padding-right: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+.link_catalogo svg {
+
+    transform: translateX(-8px);
+    transition: all 0.3s ease;
+
+}
+
+.link_catalogo:hover svg {
+
+    transform: translateX(0);
+
+}
+
+.link_catalogo:active svg {
+
+    transform: scale(0.9);
+
+}
+
+.hover_underline_animation {
+
+    position: relative;
+    color: black;
+    padding-bottom: 20px;
+
+}
+
+.hover_underline_animation:after {
+
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+
+}
+
+.link_catalogo:hover .hover_underline_animation:after {
+
+    transform: scaleX(1);
+    transform-origin: bottom left;
+
+}
+
+#arrow_horizontal{
+
+    width: 30px;
+    height: 10px;
+
+}
+
+@keyframes animaisScroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 1300px) {
+
+    .link_catalogo{
+
+        margin-right: 0px;
+
+    }
+    
+}

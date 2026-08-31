@@ -1,0 +1,55 @@
+:root{
+
+  --cor-primaria: #e452fa;
+  --cor-secundaria: #f8bbd0;
+  --cor-texto: rgb(53, 53, 53);
+  --gradiente-principal: linear-gradient(135deg, #e452fa 0%, #f8bbd0 100%);
+  --gradiente-segundario: linear-gradient(135deg, #f8bbd0 0%, #e452fa 100%);
+  --gradiente-terciario: linear-gradient(90deg, #f598a8, #f6edb2);
+
+  --fonte-titulo: "Indie Flower", cursive;
+  --fonte-sub-titulo: "Hanga One", cursive;
+
+}
+
+*{
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.font-hanga-one-regular-italic-nucleos {
+
+  font-family: "Changa One", sans-serif;
+  font-weight: bold;
+  font-style: italic;
+
+}
+
+.font-geom-header {
+
+  font-family: "Geom", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+
+}
+
+.font-indie-flower-banner {
+
+  font-family: "Indie Flower", cursive;
+  font-weight: 0;
+  font-style: normal;
+
+}

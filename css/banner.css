@@ -1,0 +1,40 @@
+@import url("global.css");
+
+#banner{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    gap: clamp(0px, 5vw, 100px);
+    background: linear-gradient(135deg, #e452fa 0%, #f8bbd0 100%);
+
+}
+
+.banner_titulo{
+
+    font-family: var(--fonte-titulo);
+    text-align: center;
+    font-size: 50px;
+    line-height: 1;
+
+}
+
+.img_banner{
+
+    width: 300px;
+    height: auto;
+
+}
+
+@media (max-width: 672px) {
+
+    .banner_titulo{
+
+        padding-top: 50px;
+
+    }
+
+}

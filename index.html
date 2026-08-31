@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MeuAmigoPerro</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/nucleos.css">
+    <link rel="stylesheet" href="css/dia-dia.css">
+    <link rel="stylesheet" href="css/calendario.css">
+    <link rel="stylesheet" href="css/metodologia.css">
+    <link rel="stylesheet" href="css/animais.css">
+    <link rel="stylesheet" href="css/voluntarios.css">
+    <link rel="stylesheet" href="css/apoiadores.css">
+    <link rel="stylesheet" href="css/empresas.css">
+    <link rel="stylesheet" href="css/doe.css">
+    <link rel="stylesheet" href="css/adote.css">
+    <link rel="stylesheet" href="css/contato.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geom:ital,wght@0,300..900;1,300..900&family=Indie+Flower&family=Special+Gothic:wght@400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header class="header">
+
+    <div class="header_icon">
+        <a href="#banner" class="header_link"><img class="img_icon" src="imgs/header/Logo.webp" alt=""></a>
+        <a href="#banner" class="header_link img_icon_name">MeuAmigoPerro</a>
+    </div>
+
+    <!-- Nav desktop (visível acima de 672px) -->
+    <nav class="header_nav">
+        <a href="#dia-dia" class="header_link">Dia a Dia</a>
+        <a href="#calendario" class="header_link">Calendário</a>
+        <a href="#voluntarios" class="header_link">Voluntários</a>
+        <a href="#metodologia" class="header_link">Metodologia</a>
+        <a href="#doe" class="header_link">Doe</a>
+        <a href="#apoiadores" class="header_link">Apoiadores</a>
+        <a href="#adote" class="header_link">Adote</a>
+        <a href="#contato" class="header_link">Contato</a>
+        <a href="https://docs.google.com/document/d/1up0SeJB70uF11NVlimJs50XllIdCrySEZs8uvkJy0PQ/edit?tab=t.0" target="_blank" class="header_link">Saiba mais</a>
+    </nav>
+
+    <!-- Botão hambúrguer (visível apenas em mobile) -->
+    <button class="header_hamburger" id="hamburgerBtn" aria-label="Abrir menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+</header>
+
+<!-- Drawer lateral -->
+    <nav class="drawer" id="drawer" aria-hidden="true">
+        <a href="#dia-dia" class="header_link">Dia a Dia</a>
+        <a href="#calendario" class="header_link">Calendário</a>
+        <a href="#voluntarios" class="header_link">Voluntários</a>
+        <a href="#metodologia" class="header_link">Metodologia</a>
+        <a href="#doe" class="header_link">Doe</a>
+        <a href="#apoiadores" class="header_link">Apoiadores</a>
+        <a href="#adote" class="header_link">Adote</a>
+        <a href="#contato" class="header_link">Contato</a>
+        <a href="https://docs.google.com/document/d/1up0SeJB70uF11NVlimJs50XllIdCrySEZs8uvkJy0PQ/edit?tab=t.0" target="_blank" class="header_link">Saiba mais</a>
+    </nav>
+
+<section id="banner">
+
+    <h1 class="banner_titulo">UMA REDE<br>DE ESPERANÇA</h1>
+
+    <img class="img_banner" src="imgs/banner/Teco.webp">
+
+</section>
+
+<section id="dia-dia">
+
+    <h1 class="nucleos_titulo_mobile">Conheça nossos núcleos</h1>
+
+    <section id="nucleos">
+
+        <div class="content_cards">
+
+            <a href="#" class="nucleos_card" data-nome="Administrativo e Jurídico" data-desc="Responsável pela parte administrativa e jurídica do grupo, cuidando da documentação, regularização e questões legais que envolvem o funcionamento do MeuAmigoPerro.">
+
+                <img src="imgs/nucleos/NAJ.webp" class="nucleos_icon" alt="Núcleo Administrativo e Jurídico">
+
+                <span class="nucleos_text">Administrativo e<br>Jurídico </span>
+
+            </a>
+
+            <a href="#" class="nucleos_card" data-nome="Comunicação e Conscientização" data-desc="Cuida da comunicação do grupo, produzindo conteúdo para as redes sociais e promovendo ações de conscientização sobre a causa animal.">
+
+                <img src="imgs/nucleos/NCC.webp" class="nucleos_icon" alt="Núcleo de Comunicação e Conscientização">
+
+                <span class="nucleos_text">Comunicação e<br>Conscientização </span>
+
+            </a>
+
+            <a href="#" class="nucleos_card" data-nome="Recursos e Parcerias" data-desc="Responsável por captar recursos, doações e firmar parcerias com apoiadores e empresas que ajudam a manter o trabalho do grupo.">
+
+                <img src="imgs/nucleos/NCRP.webp" class="nucleos_icon" alt="Núcleo de Recursos e Parcerias">
+
+                <span class="nucleos_text">Recursos e<br>Parcerias </span>
+
+            </a>
+
+            <a href="#" class="nucleos_card" data-nome="Infraestrutura e Operações" data-desc="Cuida da infraestrutura física e da logística das operações do grupo, como abrigos, comedouros e demais estruturas de apoio aos animais.">
+
+                <img src="imgs/nucleos/NIO.webp" class="nucleos_icon" alt="Núcleo de Infraestrutura e Operações">
+
+                <span class="nucleos_text">Infraestrutura e<br>Operações </span>
+
+            </a>
+
+            <a href="#" class="nucleos_card" data-nome="Tecnologia da Informação" data-desc="Responsável pelo desenvolvimento e manutenção do site e do aplicativo do grupo, além de outras soluções tecnológicas.">
+
+                <img src="imgs/nucleos/NTI.webp" class="nucleos_icon" alt="Núcleo de Tecnologia da Informação">
+
+                <span class="nucleos_text">Tecnologia da<br>Informação</span>
+
+            </a>
+
+            <a href="#" class="nucleos_card" data-nome="Bem-estar Animal" data-desc="Cuida diretamente do bem-estar dos animais, incluindo alimentação, saúde e todo o processo de adoção responsável.">
+
+                <img src="imgs/nucleos/NBA.webp" class="nucleos_icon" alt="Núcleo de Bem-estar Animal">
+
+                <span class="nucleos_text">Bem-estar<br>Animal</span>
+
+            </a>
+
+        </div>
+
+
+        <div class="descricao_card_nucleos">
+
+            <h3 class="descricao_card_nucleos_titulo"></h3>
+
+            <p class="descricao_card_nucleos_texto"></p>
+
+        </div>
+
+    </section>
+
+    <h1 class="dia-dia_titulo">Dia a dia</h1>
+
+    <div class="carousel">
+
+        <div class="carousel_moldura_esquerda" onclick="anterior()">
+            <img id="img-esquerda" class="carousel_imgs">
+            <h1 id="texto-esquerda" class="carousel_imgs_text">Simpósio - 2026</h1>
+        </div>
+
+        <button class="carousel_button_esquerda" onclick="anterior()"></button>
+
+        <div class="carousel_moldura_centro">
+            <img id="img-centro" class="carousel_imgs">
+            <h1 id="texto-centro" class="carousel_imgs_text">Simpósio - 2026</h1>
+        </div>
+
+        <button class="carousel_button_direita" onclick="proximo()"></button>
+
+        <div class="carousel_moldura_direita" onclick="proximo()">
+            <img id="img-direita" class="carousel_imgs">
+            <h1 id="texto-direita" class="carousel_imgs_text">Simpósio - 2026</h1>
+        </div>
+
+    </div>
+
+</section>
+
+<section id="calendario">
+
+    <h1 class="calendario_titulo">Calendário</h1>
+ 
+    <div class="miolo">
+
+        <div class="espiral" aria-hidden="true">
+
+        <div class="anel"></div><div class="anel"></div><div class="anel"></div>
+
+        <div class="anel"></div><div class="anel"></div><div class="anel"></div>
+
+        <div class="anel"></div><div class="anel"></div><div class="anel"></div>
+
+        <div class="anel"></div><div class="anel"></div><div class="anel"></div>
+        
+        </div>
+ 
+        <div class="paineis">
+        <!-- CALENDÁRIO -->
+        <section class="calendario-painel" id="painelCalendario">
+
+            <div class="calendario-cabecalho">
+
+            <div class="calendario-grupo-titulo">
+
+                <div class="mes" id="rotuloMes">Mês</div>
+
+                <div class="ano" id="rotuloAno">Ano</div>
+
+            </div>
+
+            <div class="navegacao">
+
+                <button id="botaoAnterior" aria-label="Mês anterior">‹</button>
+
+                <button id="botaoProximo" aria-label="Próximo mês">›</button>
+
+            </div>
+
+            </div>
+    
+            <div class="dias-semana">
+
+            <span>Dom</span><span>Seg</span><span>Ter</span><span>Qua</span>
+
+            <span>Qui</span><span>Sex</span><span>Sáb</span>
+
+            </div>
+    
+            <div class="dias" id="gradeDias"></div>
+
+        </section>
+    
+        <!-- EVENTOS -->
+        <section class="calendario-painel" id="painelEventos">
+
+            <div class="eventos-cabecalho">
+
+            <div class="sobretitulo">Compromissos do dia</div>
+
+            <div class="data-selecionada" id="rotuloDataSelecionada">—</div>
+
+            </div>
+
+            <div id="corpoEventos"></div>
+
+        </section>
+
+        </div>
+
+  </div>
+
+    <a href="https://www.instagram.com/meuamigoperro/" target="_blank" class="link_calendario">
+        
+    <span class="hover_underline_animation"> Acompanhe </span>
+
+        <svg id="arrow_horizontal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 16">
+
+        <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
+
+    </svg>
+
+    </a>
+ 
+</section>
+
+<section id="metodologia">
+
+    <h1 class="metodologia_titulo">Nossa Metodologia</h1>
+
+    <div class="metodologia_container">
+
+        <div class="ciclo">
+
+            <svg class="ciclo_seta_svg" viewBox="0 0 516 516" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <marker id="seta" markerWidth="6" markerHeight="6" refX="3" refY="3" orient="auto">
+                        <path d="M0,0 L0,6 L6,3 Z" fill="#e452fa"/>
+                    </marker>
+                </defs>
+                <circle
+                    class="ciclo_trilho"
+                    cx="258" cy="258" r="250"
+                    fill="none"
+                    stroke="#f8bbd0"
+                    stroke-width="8"
+                />
+                <circle
+                    class="ciclo_seta_path"
+                    cx="258" cy="258" r="250"
+                    fill="none"
+                    stroke="#e452fa"
+                    stroke-width="4"
+                    stroke-linecap="round"
+                    marker-end="url(#seta)"
+                />
+            </svg>
+
+            <button id="etapa1" class="etapa" onclick="catalogar()">
+                <img src="imgs/metodologia/catalogarIcon.png" alt="">
+                <span class="etapa_text">Catalogar</span>
+            </button>
+
+            <button id="etapa2" class="etapa" onclick="capturar()">
+                <img src="imgs/metodologia/capturarIcon.webp" alt="">
+                <span class="etapa_text">Capturar</span>
+            </button>
+
+            <button id="etapa3" class="etapa"  onclick="cuidar()">
+                <img src="imgs/metodologia/cuidarIcon.webp" alt="">
+                <span class="etapa_text">Cuidar</span>
+            </button>
+
+            <button id="etapa4" class="etapa" onclick="socializar()">
+                <img src="imgs/metodologia/socializarIcon.webp" alt="">
+                <span class="etapa_text">Socializar</span>
+            </button>
+
+            <button id="etapa5" class="etapa" onclick="adotar()">
+                <img src="imgs/metodologia/adotarIcon.png" alt="">
+                <span class="etapa_text">Adotar</span>
+            </button>
+
+            <button id="etapa6" class="etapa" onclick="retornar()">
+                <img src="imgs/metodologia/retornarIcon.webp" alt="">
+                <span class="etapa_text">Retornar</span>
+            </button>
+
+            <button class="ciclo_centro">
+                <img src="imgs/metodologia/coracaoIcon.webp" alt="">
+            </button>
+
+        </div>
+
+        <div id="quadro_paineis">
+
+            <button class="metodologia_button_anterior" onclick="metodologiaAnterior()"></button>
+
+            <div id="painel_catalogar" class="painel">
+
+                <img
+                    class="painel_imagem"
+                    src="imgs/metodologia/Catalogar.webp"
+                    alt=""
+                >
+
+                <div class="painel_texto">
+
+                    <h2>Catalogar</h2>
+
+                    <p>
+                        Um animal em situação de rua é catalogado usando as ferramentas do projeto,
+                        registrando suas características. 
+                        O animal considerado não feroz recebe uma coleira roxa refletiva para facilitar sua identificação.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div id="painel_capturar" class="painel">
+
+                <img
+                    class="painel_imagem"
+                    src="imgs/metodologia/Capturar.webp"
+                    alt=""
+                >
+
+                <div class="painel_texto">
+
+                    <h2>Capturar</h2>
+
+                    <p>
+                        O animal catalogado é localizado e capturado (caso permita), 
+                        são identificadas suas necessidades de saúde,
+                        o mesmo permanece sob tutoria em lar temporário até o final do tratamento.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div id="painel_cuidar" class="painel">
+
+                <img
+                    class="painel_imagem"
+                    src="imgs/metodologia/Cuidar.webp"
+                    alt=""
+                >
+
+                <div class="painel_texto">
+
+                    <h2>Cuidar</h2>
+
+                    <p>
+                        O cuidado inclui castração obrigatória (para conter a população de rua)
+                        e o tratamento de saúde do que foi identificado. O animal fica em lar temporário até o final do tratamento.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div id="painel_socializar" class="painel">
+
+                <img
+                    class="painel_imagem"
+                    src="imgs/metodologia/Socializar.webp"
+                    alt=""
+                >
+
+                <div class="painel_texto">
+
+                    <h2>Socializar</h2>
+
+                    <p>
+                        A socialização é a avaliação do temperamento do animal (docilidade, medo, agressividade etc.), 
+                        feita pelos voluntários da captura e cuidado em consenso. 
+                        Se o comportamento for compatível com convivência humana, 
+                        o animal é liberado para adoção, se for agressivo ou reativo, 
+                        permanece sob monitoramento sem iniciar o processo de adoção.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div id="painel_adotar" class="painel">
+
+                <img
+                    class="painel_imagem"
+                    src="imgs/metodologia/Adotar.webp"
+                    alt=""
+                >
+
+                <div class="painel_texto">
+
+                    <h2>Adotar</h2>
+
+                    <p>
+                        A adoção começa com a divulgação do animal (fotos, personalidade, etc.) nos canais de comunicação,
+                        permanecendo visível até ser adotado, com dados sempre atualizados.
+                        Enquanto aguarda, o animal passa pelo processo de retorno.
+                        Entrevistas são conduzidas com interessados para garantir compatibilidade com o novo lar,
+                        os voluntários fazem o transporte e entrega do animal após a aprovação.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div id="painel_retornar" class="painel">
+
+                <img
+                    class="painel_imagem"
+                    src="imgs/metodologia/Retornar.webp"
+                    alt=""
+                >
+
+                <div class="painel_texto">
+
+                    <h2>Retornar</h2>
+
+                    <p>
+                        O animal que ainda não foi adotado é castrado,
+                        cuidado e devolvido ao seu local de origem, 
+                        com acesso a um ApoioPet e monitoramento contínuo pelo projeto,
+                        agora como um animal comunitário.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <button class="metodologia_button_proximo" onclick="metodologiaProximo()"></button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section id="animais">
+
+    <div class="animais_content">
+
+        <div class="animais_track"></div>
+
+    </div>
+
+    <a href="https://docs.google.com/spreadsheets/d/1I4AMZiez576DroiDWNlRuYgA1clsFu8V-Pxqu-ksiSc/edit?usp=sharing" class="link_catalogo" target="_blank">
+    
+        <span class="hover_underline_animation"> Amigos catalogados </span>
+
+            <svg id="arrow_horizontal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 16">
+
+            <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
+
+        </svg>
+
+    </a>
+
+</section>
+
+<section id="voluntarios">
+
+    <img id="onda_voluntario_cima" class="ondas_voluntarios" src="imgs/voluntarios/Onda.png">
+
+    <h1 class="voluntarios_titulo">Voluntarios</h1>
+
+    <div class="carousel_voluntarios">
+
+        <button type="button" class="carousel_seta" id="seta_voluntarios_esquerda" aria-label="Voluntários anteriores">
+            <img class="carousel_seta_img" src="imgs/voluntarios/setaEsquerda.webp" alt="">
+        </button>
+
+        <div class="carousel_viewport_voluntarios">
+            <div id="content_voluntarios">
+
+                <!-- slides construidos pelo JS  -->
+
+            </div>
+        </div>
+
+        <button type="button" class="carousel_seta" id="seta_voluntarios_direita" aria-label="Próximos voluntários">
+            <img class="carousel_seta_img" src="imgs/voluntarios/setaDireita.webp" alt="">
+        </button>
+
+    </div>
+
+    <div class="carousel_dots_voluntarios" id="carousel_dots_voluntarios">
+
+        <!-- dots construidos pelo JS  -->
+
+    </div>
+
+    <a class="link_seja_voluntario">
+        
+        <span class="hover_underline_animation"> Quero ser voluntário </span>
+
+            <svg id="arrow_horizontal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 16">
+
+            <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
+
+        </svg>
+
+    </a>
+
+    <img id="onda_voluntario_baixo" class="ondas_voluntarios" src="imgs/voluntarios/Onda.png">
+
+</section>
+
+<section id="apoiadores">
+
+    <h1 class="apoiadores_titulo">Apoiadores</h1>
+
+        <div class="content_apoiadores">
+ 
+            <img id="pata_amarela" class="img_patas" src="imgs/apoiadores/PataAmarela.webp">
+            <img id="pata_azul" class="img_patas" src="imgs/apoiadores/PataAzul.webp">
+            <img id="pata_rosa" class="img_patas" src="imgs/apoiadores/PataRosa.webp">
+
+        </div>
+
+    <a class="link_apoiar">
+        
+        <span class="hover_underline_animation"> Quero apoiar </span>
+
+            <svg id="arrow_horizontal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 16">
+
+            <path id="Path_10" data-name="Path 10" d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z" transform="translate(30)"></path>
+
+        </svg>
+
+    </a>
+
+    <section id="empresas">
+
+        <div class="empresas_content">
+            <div class="empresas_track">
+
+                <!-- div construida pelo JS  -->
+
+            </div>
+        </div>
+
+    </section>
+
+</section>
+
+<section id="doe">
+
+        <img id="onda_doe_cima" class="ondas_doe" src="imgs/doe/OndaCima.png">
+
+        <div id="content_doe">
+
+            <img class="img_doe" src="imgs/doe/Teco.png">
+
+            <div class="card_doe">
+
+                <span class="card_title">APOIE VIA PIX</span>
+                <img class="QR_doe" src="imgs/doe/QR.png">
+                <h1 class="chave_pix">meuamigoperro@gmail.com</h1>
+
+            </div>
+
+        </div>
+
+    <img id="onda_doe_baixo" class="ondas_doe" src="imgs/doe/OndaBaixo.png">
+
+</section>
+
+<section id="adote">
+
+    <h1 class="adote_titulo">Adote</h1>
+
+    <div class="content_adote">
+
+        <div class="cards_adote">
+
+            <img class="img_adote" src="imgs/adote/AdoteJu.png">
+            <img class="img_adote" src="imgs/adote/AdoteTeco.png">
+            <img class="img_adote" src="imgs/adote/AdoteMargarida.png">
+            <img class="img_adote" src="imgs/adote/AdoteToquinho.png">
+
+        </div>
+
+        <div class="cards_adote_mobile">
+
+            <img class="img_adote" src="imgs/adote/AdoteJu.png">
+            <img class="img_adote" src="imgs/adote/AdoteToquinho.png">
+
+        </div>
+
+        <p class="adote_text">
+            Quer adotar um bichinho? 🐾 Dá uma olhada no nosso Instagram, 
+            lá a gente sempre atualiza os animais disponíveis para adoção no destaque "Adote"!
+            <br><br>
+            Quem cuida de todo o processo é o Núcleo de Bem-estar Animal, se você se interessou por algum bichinho, 
+            é só chamar qualquer voluntário do núcleo que a gente te ajuda a dar início à adoção 💛
+            <br><br>
+            Animais disponíveis: <a href="https://www.instagram.com/stories/highlights/18407022313085199/" target="_blank">Adote</a>
+            <br><br>
+            Contatos para adotar: <a href="https://docs.google.com/spreadsheets/d/14LTGGR-4W0vBjF2mih-uLwlGE2YZVuuFZQjUNfICV7A/edit?gid=0#gid=0" target="_blank">Voluntários</a>
+        </p>
+
+    </div>
+
+</section>
+
+<section id="contato">
+
+    <h1 class="contato_titulo">Contato</h1>
+
+    <div class="content_cards_contato">
+
+        <div class="card_mapa_contato">
+
+            <img class="icon_localizacao_contato" src="imgs/contato/IconLocalizacao.png">
+            
+            <iframe class="mapa_contato" src="https://www.google.com/maps?q=UFC+Campus+Russas,+Rua+Felipe+Santiago,+411,+Russas,+CE&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"> </iframe>
+
+            <h2 class="mapa_text_contato">UFC - Campos Russas</h2>
+
+        </div>
+
+        <div class="card_contato">
+
+            <a href="https://chat.whatsapp.com/FXrFr243Ca1GhEiCFZotCH" target="_blank" class="card_link_contato">
+
+                <img class="icon_contato" src="imgs/contato/IconWhatsApp.png">
+
+                <span class="card_text_contato">Grupo aberto para apoiadores</span>
+
+            </a>
+
+        </div>
+
+        <div class="card_contato">
+
+            <a href="https://www.instagram.com/meuamigoperro/" target="_blank" class="card_link_contato">
+
+                <img class="icon_contato" src="imgs/contato/IconInstagram.png">
+
+                <span class="card_text_contato">Nosso Instagram</span>
+
+            </a>
+
+        </div>
+
+        <div class="card_contato">
+
+            <a href="https://docs.google.com/spreadsheets/d/14LTGGR-4W0vBjF2mih-uLwlGE2YZVuuFZQjUNfICV7A/edit?gid=0#gid=0" class="card_link_contato" target="_blank">
+
+                <img class="icon_contato" src="imgs/contato/IconVoluntarios.png">
+
+                <span class="card_text_contato">Contato dos voluntários</span>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<footer id="rodape">
+ 
+    <div id="rodape_grid">
+ 
+      <div class="rodape_col">
+
+        <span class="rodape_col_titulo">Sobre</span>
+
+        <p>Zelamos pelo cuidado de animais domésticos em situação de abandono. Por meio da implementação de ações cotidianas de cuidado e divulgação. 
+            Organizado como um Grupo, com estrutura definida, divisão de funções e coordenação interna, promovemos a construção de abrigos e comedouros,
+            além de um site e aplicativo próprios. A realização das atividades acontece por meio de divulgação nas redes sociais, orientando a população.
+        </p>
+
+      </div>
+
+      <div class="rodape_col">
+
+        <span class="rodape_col_titulo">Links</span>
+
+        <a href="https://apoia.se/meuamigoperro" target="_blank" class="header_link">Catálogo</a>
+
+        <a href="https://apoia.se/meuamigoperro" target="_blank" class="header_link">Apoia-se</a>
+
+        <a href="https://docs.google.com/document/d/1up0SeJB70uF11NVlimJs50XllIdCrySEZs8uvkJy0PQ/edit?usp=sharing" target="_blank" class="header_link">Dossiê institucional</a>
+
+        <a href="https://docs.google.com/spreadsheets/d/14LTGGR-4W0vBjF2mih-uLwlGE2YZVuuFZQjUNfICV7A/edit?gid=0#gid=0 " target="_blank" class="header_link">Contatos</a>
+
+      </div>
+ 
+      <div class="rodape_col">
+
+        <span class="rodape_col_titulo">Contato</span>
+
+        <p>📧 meuamigoperro@gmail.com</p>
+
+        <a href="">🐶 Grupo para apoiadores</a>
+
+        <p>📍 Russas - CE - Brasil</p>
+
+      </div>
+
+      <div class="rodape_col">
+
+        <span class="rodape_col_titulo">Redes</span>
+
+        <div class="rodape_social">
+
+          <a href="#" title="Instagram"><img class="rodape_img" src="imgs/footer/instagram.png"></a>
+
+          <a href="#" title="WhatsApp"><img class="rodape_img"src="imgs/footer/whatsapp.png"></a>
+
+        </div>
+
+      </div>
+ 
+    </div>
+ 
+    <div class="rodape_divisor"></div>
+ 
+    <div id="rodape_bottom">
+
+      <p>© 2026 <span>MeuAmigoPerro</span>. Todos os direitos reservados.</p>
+
+      <p>Feito com <span>💜</span> e muitas patinhas.</p>
+
+    </div>
+ 
+</footer>
+
+</body>
+
+<script src="js/header.js" defer></script>
+<script src="js/nucleos.js" defer></script>
+<script src="js/dia-dia.js" defer></script>
+<script src="js/calendario.js" defer></script>
+<script src="js/metodologia.js" defer></script>
+<script src="js/animais.js" defer></script>
+<script src="js/voluntarios.js" defer></script>
+<script src="js/apoiadores.js" defer></script>
+<script src="js/empresas.js" defer></script>
+<script src="js/doe.js" defer></script>
+<script src="js/adote.js" defer></script>
+<script src="js/contato.js" defer></script>
+<script src="js/footer.js" defer></script>
+
+</html>

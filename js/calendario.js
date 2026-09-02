@@ -2,7 +2,11 @@
 
   /* ==========================================================
      DADOS: array de objetos de eventos.
-     Cada evento: { data: 'AAAA-MM-DD', horaInicio, horaFim, nucleo, titulo, descricao }
+     Cada evento: { data: 'AAAA-MM-DD', horaInicio, horaFim, nucleo, titulo, descricao, repetirMensal? }
+     - Se repetirMensal for true, o evento passa a ocorrer todo mês,
+       sempre no mesmo dia do mês da data original (a partir dela).
+       Se o dia não existir em algum mês (ex: 31 em fevereiro), usa
+       o último dia disponível daquele mês.
      Edite/insira livremente neste array para popular o calendário.
      ========================================================== */
   const hoje = new Date();
@@ -11,53 +15,95 @@
 
   const eventos = [
     {
-      data: '2026-08-11',
-      horaInicio: '09:00',
-      horaFim: '10:00',
-      nucleo: 'Administrativo',
-      titulo: 'Reunião de alinhamento',
-      descricao: 'Revisão semanal com a equipe sobre o andamento das entregas.'
-    },
-    {
-      data: '2026-08-03',
-      horaInicio: '14:30',
-      horaFim: '15:15',
-      nucleo: 'BemEstar',
-      titulo: 'Ligação com cliente',
-      descricao: 'Apresentação da proposta atualizada e próximos passos do contrato.'
-    },
-    {
-      data: '2026-08-23',
-      horaInicio: '11:00',
-      horaFim: '12:00',
-      nucleo: 'Contato',
-      titulo: 'Dentista',
-      descricao: 'Consulta de rotina — levar carteirinha do convênio.'
-    },
-    {
-      data: '2026-08-10',
+      data: '2026-00-28',
       horaInicio: '19:00',
-      horaFim: '21:00',
-      nucleo: 'Financeiro',
-      titulo: 'Aula de espanhol',
-      descricao: 'Módulo 4 — verbos irregulares no passado.'
-    },
-    {
-      data: '2026-08-17',
-      horaInicio: '19:00',
-      horaFim: '21:00',
-      nucleo: 'Infraestrutura',
-      titulo: 'Aula de espanhol',
-      descricao: 'Módulo 4 — verbos irregulares no passado.'
-    },
-    {
-      data: '2026-08-01',
-      horaInicio: '19:00',
-      horaFim: '21:00',
+      horaFim: '20:00',
       nucleo: 'Tecnologia',
-      titulo: 'Aula de espanhol',
-      descricao: 'Módulo 4 — verbos irregulares no passado.'
-    }
+      titulo: 'Reunião mensal de alinhamento - Opcional',
+      descricao: 'Reunião destinada ao Núcleo de Tecnologia da Informação à avaliação das atividades realizadas no mês anterior e à definição das atividades do próximo período.',
+      repetirMensal: true
+    },
+    {
+      data: '2026-00-27',
+      horaInicio: '19:00',
+      horaFim: '20:00',
+      nucleo: 'Infraestrutura',
+      titulo: 'Reunião mensal de alinhamento - Opcional',
+      descricao: 'Reunião destinada ao Infraestrutura e Operações à avaliação das atividades realizadas no mês anterior e à definição das atividades do próximo período.',
+      repetirMensal: true 
+    },
+    {
+      data: '2026-00-26',
+      horaInicio: '19:00',
+      horaFim: '20:00',
+      nucleo: 'Contato',
+      titulo: 'Reunião mensal de alinhamento - Opcional',
+      descricao: 'Reunião destinada ao Núcleo de Comunicação e Conscientização à avaliação das atividades realizadas no mês anterior e à definição das atividades do próximo período.',
+      repetirMensal: true
+    },
+    {
+      data: '2026-00-25',
+      horaInicio: '19:00',
+      horaFim: '20:00',
+      nucleo: 'Financeiro',
+      titulo: 'Reunião mensal de alinhamento - Opcional',
+      descricao: 'Reunião destinada ao Núcleo de Captação de Recursos e Parcerias à avaliação das atividades realizadas no mês anterior e à definição das atividades do próximo período.',
+      repetirMensal: true
+    },
+    {
+      data: '2026-00-24',
+      horaInicio: '19:00',
+      horaFim: '20:00',
+      nucleo: 'BemEstar',
+      titulo: 'Reunião mensal de alinhamento - Opcional',
+      descricao: 'Reunião destinada ao Núcleo de Bem-estar Animal à avaliação das atividades realizadas no mês anterior e à definição das atividades do próximo período.',
+      repetirMensal: true
+    },
+    {
+      data: '2026-00-01',
+      horaInicio: '10:00',
+      horaFim: '18:00',
+      nucleo: 'Financeiro',
+      titulo: 'Prestação de contas - Obrigatório',
+      descricao: 'Organização das entradas e saídas mensais para divulgação pública via Instagram, visando à transparência. Realizada pelo Núcleo de Captação de Recursos e Parcerias.',
+      repetirMensal: true
+    },
+    {
+      data: '2026-00-15',
+      horaInicio: '10:00',
+      horaFim: '18:00',
+      nucleo: 'Administrativo',
+      titulo: 'Seleção processo seletivo - Obrigatório',
+      descricao: 'Consiste na análise e avaliação dos candidatos que realizaram a leitura do edital e o preenchimento do formulário de inscrição, visando à seleção de novos voluntários. Realizada pelo Núcleo Administrativo e Jurídico.',
+      repetirMensal: true
+    },
+    {
+      data: '2026-00-05',
+      horaInicio: '10:00',
+      horaFim: '18:00',
+      nucleo: 'Contato',
+      titulo: 'Publicação de um post/reels - Obrigatório',
+      descricao: 'Data final para entrega da Criação de Reels ou posts educativos/informativos sobre as atividades realizadas pelo projeto, ações de conscientização, artigos e demais conteúdos relevantes, seguindo a identidade visual estabelecida pelo projeto. Realizada pelo Núcleo de Comunicação e Conscientização.',
+      repetirMensal: true
+    },
+    {
+      data: '2026-00-20',
+      horaInicio: '10:00',
+      horaFim: '18:00',
+      nucleo: 'Contato',
+      titulo: 'Publicação de um post/reels - Obrigatório',
+      descricao: 'Data final para entrega da criação de Reels ou posts educativos/informativos sobre as atividades realizadas pelo projeto, ações de conscientização, artigos e demais conteúdos relevantes, seguindo a identidade visual estabelecida pelo projeto. Realizada pelo Núcleo de Comunicação e Conscientização.',
+      repetirMensal: true
+    },
+      {
+      data: '2026-00-10',
+      horaInicio: '10:00',
+      horaFim: '18:00',
+      nucleo: 'Financeiro',
+      titulo: 'Coleta de arrecadação  - Obrigatório',
+      descricao: 'Data final para criação e divulgação de uma chamada fixa para doações destinadas à manutenção e ao sustento do projeto. A campanha deverá ser divulgada em todos os canais de comunicação disponíveis, destacando a importância das contribuições para a continuidade das atividades e priorizando a captação de doações recorrentes. A atividade será realizada em conjunto pelo Núcleo de Comunicação e Conscientização e pelo Núcleo de Captação de Recursos e Parcerias.',
+      repetirMensal: true
+    },
   ];
 
   /* ==========================================================
@@ -68,14 +114,12 @@
      sempre, mesmo sem estar cadastrado abaixo).
      ========================================================== */
   const CORES_NUCLEO = {
-
     Administrativo: '#dd00ff',
     BemEstar: '#00ff8c',
     Contato: '#ff8c00',
     Financeiro: '#ffea00',
     Infraestrutura: '#ff0000',
     Tecnologia: '#001eff'
-
   };
   const PALETA_RESERVA = ['#e452fa','#3fb6c9','#f6a545','#6c7ae0','#3cc98a','#ff6b81','#b98be0','#5ec8d8'];
 
@@ -122,21 +166,41 @@
     return `${y}-${pad(m+1)}-${pad(d)}`;
   }
 
+  /* decide se um evento ocorre num determinado dia (AAAA-MM-DD),
+     considerando eventos fixos mensais e o caso de meses mais curtos */
+  function ocorreEmData(evento, iso){
+    if(evento.data === iso) return true;
+    if(!evento.repetirMensal) return false;
+
+    // não repete antes da data original do evento
+    if(iso < evento.data) return false;
+
+    const diaBase = Number(evento.data.split('-')[2]);
+    const [anoIso, mesIso, diaIso] = iso.split('-').map(Number);
+
+    // se o dia base (ex: 31) não existir no mês, usa o último dia do mês
+    const ultimoDiaDoMesIso = new Date(anoIso, mesIso, 0).getDate();
+    const diaEsperado = Math.min(diaBase, ultimoDiaDoMesIso);
+
+    return diaIso === diaEsperado;
+  }
+
   function eventosDaData(iso){
     return eventos
-      .filter(e => e.data === iso)
+      .filter(e => ocorreEmData(e, iso))
       .sort((a,b) => a.horaInicio.localeCompare(b.horaInicio));
   }
 
-  /* mapa: 'AAAA-MM-DD' -> lista de códigos de núcleo únicos naquele dia */
-  function nucleosPorData(){
-    const mapa = new Map();
+  /* calcula os códigos de núcleo únicos presentes num dia específico,
+     considerando também eventos recorrentes (repetirMensal) */
+  function nucleosNaData(iso){
+    const codigos = [];
     eventos.forEach(e => {
-      if(!mapa.has(e.data)) mapa.set(e.data, []);
-      const lista = mapa.get(e.data);
-      if(!lista.includes(e.nucleo)) lista.push(e.nucleo);
+      if(ocorreEmData(e, iso) && !codigos.includes(e.nucleo)){
+        codigos.push(e.nucleo);
+      }
     });
-    return mapa;
+    return codigos;
   }
 
   /* legenda com todos os núcleos presentes nos dados, montada uma
@@ -171,7 +235,6 @@
     rotuloMes.textContent = nomesMeses[mesVisivel];
     rotuloAno.textContent = anoVisivel;
 
-    const nucleosMarcados = nucleosPorData();
     gradeDias.innerHTML = '';
 
     const primeiroDiaDoMes = new Date(anoVisivel, mesVisivel, 1);
@@ -208,20 +271,20 @@
       if(mesNormalizado > 11){ mesNormalizado = 0; anoNormalizado += 1; }
 
       const iso = isoPara(anoNormalizado, mesNormalizado, dataCelula);
-      const nucleosDoDia = nucleosMarcados.get(iso);
+      const nucleosDoDia = nucleosNaData(iso);
 
       const botao = document.createElement('button');
       botao.type = 'button';
       botao.className = 'dia' + (fora ? ' fora' : '') + (iso === isoHoje ? ' hoje' : '') + (iso === isoSelecionado ? ' selecionado' : '');
       botao.dataset.iso = iso;
-      botao.setAttribute('aria-label', `${dataCelula} de ${nomesMeses[mesNormalizado]}${nucleosDoDia ? ', com eventos do' + (nucleosDoDia.length > 1 ? 's núcleos ' : ' núcleo ') + nucleosDoDia.join(', ') : ''}`);
+      botao.setAttribute('aria-label', `${dataCelula} de ${nomesMeses[mesNormalizado]}${nucleosDoDia.length ? ', com eventos do' + (nucleosDoDia.length > 1 ? 's núcleos ' : ' núcleo ') + nucleosDoDia.join(', ') : ''}`);
 
       const numero = document.createElement('span');
       numero.className = 'numero';
       numero.textContent = dataCelula;
       botao.appendChild(numero);
 
-      if(nucleosDoDia && nucleosDoDia.length){
+      if(nucleosDoDia.length){
         const ponto = document.createElement('span');
         ponto.className = 'ponto';
         ponto.style.background = fundoAnelDoDia(nucleosDoDia);

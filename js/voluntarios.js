@@ -97,62 +97,6 @@ const voluntarios = [
             }  
         ]
     },
-    {
-        prenome: "Fernando",
-        sobrenome: "Ferreira",
-        cargos: ["NAJ", "NBA", "NIO"],
-        foto: "imgs/voluntarios/fotos/FernandoFerreira.jpg",
-        contatos:[
-            {
-                instagram: "https://www.instagram.com/meuamigoperro/",
-                linkdin: "https://www.instagram.com/meuamigoperro/",
-                email: "https://www.instagram.com/meuamigoperro/"
-
-            }  
-        ]
-    },
-    {
-        prenome: "Davi",
-        sobrenome: "Pinto",
-        cargos: ["NAJ", "NBA", "NIO"],
-        foto: "imgs/voluntarios/fotos/DaviPinto.jpg",
-        contatos:[
-            {
-                instagram: "https://www.instagram.com/meuamigoperro/",
-                linkdin: "https://www.instagram.com/meuamigoperro/",
-                email: "https://www.instagram.com/meuamigoperro/"
-
-            }  
-        ]
-    },
-    {
-        prenome: "Fernando",
-        sobrenome: "Ferreira",
-        cargos: ["NAJ", "NBA", "NIO"],
-        foto: "imgs/voluntarios/fotos/FernandoFerreira.jpg",
-        contatos:[
-            {
-                instagram: "https://www.instagram.com/meuamigoperro/",
-                linkdin: "https://www.instagram.com/meuamigoperro/",
-                email: "https://www.instagram.com/meuamigoperro/"
-
-            }  
-        ]
-    },
-    {
-        prenome: "Davi",
-        sobrenome: "Pinto",
-        cargos: ["NAJ", "NBA", "NIO"],
-        foto: "imgs/voluntarios/fotos/DaviPinto.jpg",
-        contatos:[
-            {
-                instagram: "https://www.instagram.com/meuamigoperro/",
-                linkdin: "https://www.instagram.com/meuamigoperro/",
-                email: "https://www.instagram.com/meuamigoperro/"
-
-            }  
-        ]
-    },
 ];
 
 

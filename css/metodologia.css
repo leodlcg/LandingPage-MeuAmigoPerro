@@ -76,6 +76,8 @@
     color: rgb(42, 41, 41);
     cursor: pointer;
     font-family: var(--fonte-sub-titulo);
+    font-weight: bold;
+    font-style: italic;
     font-size: clamp(8px, 1vw, 11px);
     letter-spacing: .8px;
     text-align: center;

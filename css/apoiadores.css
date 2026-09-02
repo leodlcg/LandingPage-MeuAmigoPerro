@@ -67,6 +67,7 @@
     border: none;
     background: none;
     cursor: pointer;
+    text-decoration: none;
     font-family: var(--fonte-titulo);
     padding-top: 20px;
     padding-bottom: 50px;
@@ -169,6 +170,7 @@
 
     .link_apoiar{
 
+        margin-left: 20px;
         margin-right: 0px;
 
     }

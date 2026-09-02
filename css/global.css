@@ -8,7 +8,7 @@
   --gradiente-terciario: linear-gradient(90deg, #f598a8, #f6edb2);
 
   --fonte-titulo: "Indie Flower", cursive;
-  --fonte-sub-titulo: "Hanga One", cursive;
+  --fonte-sub-titulo: "Changa One", sans-serif;
 
 }
 
@@ -26,30 +26,5 @@ body{
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
-}
-
-.font-hanga-one-regular-italic-nucleos {
-
-  font-family: "Changa One", sans-serif;
-  font-weight: bold;
-  font-style: italic;
-
-}
-
-.font-geom-header {
-
-  font-family: "Geom", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-
-}
-
-.font-indie-flower-banner {
-
-  font-family: "Indie Flower", cursive;
-  font-weight: 0;
-  font-style: normal;
 
 }

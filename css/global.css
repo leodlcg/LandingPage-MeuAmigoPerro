@@ -6,9 +6,8 @@
   --gradiente-principal: linear-gradient(135deg, #e452fa 0%, #f8bbd0 100%);
   --gradiente-segundario: linear-gradient(135deg, #f8bbd0 0%, #e452fa 100%);
   --gradiente-terciario: linear-gradient(90deg, #f598a8, #f6edb2);
-
   --fonte-titulo: "Indie Flower", cursive;
-  --fonte-sub-titulo: "Changa One", sans-serif;
+  --fonte-sub-titulo: "Patrick Hand", cursive;
 
 }
 

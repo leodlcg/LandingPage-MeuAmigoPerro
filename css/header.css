@@ -8,7 +8,7 @@
     align-items: center;
     box-sizing: border-box;
     font-family: var(--fonte-sub-titulo);
-    font-weight: bold;
+    font-weight: 500;
     font-style: italic;
     top: 0;
     left: 0;
@@ -33,7 +33,7 @@
 
 .header_link {
 
-    font-size: 20px;
+    font-size: 25px;
     text-decoration: none;
     color: var(--cor-texto);
     transition: var(--transition-default);
@@ -65,7 +65,7 @@
 
 .img_icon_name {
 
-    font-size: 3cqmin;
+    font-size: 4cqmin;
 
 }
 
@@ -151,7 +151,6 @@
 
 .drawer .header_link {
     font-size: 22px;
-    font-weight: 500;
 }
 
 

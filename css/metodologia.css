@@ -78,7 +78,7 @@
     font-family: var(--fonte-sub-titulo);
     font-weight: bold;
     font-style: italic;
-    font-size: clamp(8px, 1vw, 11px);
+    font-size: clamp(8px, 1vw, 15px);
     letter-spacing: .8px;
     text-align: center;
     text-transform: uppercase;
@@ -157,7 +157,7 @@
 .painel_texto {
 
     font-family: var(--fonte-sub-titulo);
-    font-size: 18px;
+    font-size: 22px;
     text-align: justify;
     padding: clamp(16px, 3vw, 30px);
 

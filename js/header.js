@@ -1,54 +1,35 @@
 const btn = document.getElementById('hamburgerBtn');
 const drawer = document.getElementById('drawer');
-const overlay = document.getElementById('drawerOverlay');
-
-let closingViaPopstate = false; // evita loop entre closeDrawer() e popstate
 
 function openDrawer() {
-    drawer.classList.add('is-open');
-    overlay.classList.add('is-open');
-    btn.classList.add('is-open');
-    btn.setAttribute('aria-expanded', 'true');
-    drawer.setAttribute('aria-hidden', 'false');
-    document.body.style.overflow = 'hidden';
 
-    // Cria uma entrada "fantasma" no histórico pra capturar o botão voltar
-    history.pushState({ drawerOpen: true }, '');
+    drawer.classList.add('is-open');
+    document.getElementById("hamburgerBtn").classList.add('is-open');
+    document.getElementById("hamburgerBtn").setAttribute('aria-expanded', 'true');
+    drawer.setAttribute('aria-hidden', 'false');
+
 }
 
 function closeDrawer() {
     drawer.classList.remove('is-open');
-    overlay.classList.remove('is-open');
     btn.classList.remove('is-open');
     btn.setAttribute('aria-expanded', 'false');
     drawer.setAttribute('aria-hidden', 'true');
-    document.body.style.overflow = '';
-
-    // Se o fechamento NÃO veio do botão voltar, consome a entrada fantasma
-    if (!closingViaPopstate && history.state && history.state.drawerOpen) {
-        history.back();
-    }
-    closingViaPopstate = false;
 }
 
-btn.addEventListener('click', () => {
+document.getElementById("hamburgerBtn").addEventListener('click', () => {
     drawer.classList.contains('is-open') ? closeDrawer() : openDrawer();
 });
 
-overlay.addEventListener('click', closeDrawer);
-
-drawer.querySelectorAll('.header_link').forEach(link => {
-    link.addEventListener('click', closeDrawer);
+// Fecha ao clicar em qualquer link do drawer
+document.addEventListener('click', (e) => {
+    if (open && !drawer.contains(e.target) && e.target.id !== 'hamburgerBtn') {
+        closeDrawer(e);
+    }
 });
 
-document.addEventListener('keydown', e => {
-    if (e.key === 'Escape') closeDrawer();
-});
-
-// Fecha o drawer quando o usuário aperta a seta de voltar do celular
-window.addEventListener('popstate', () => {
-    if (drawer.classList.contains('is-open')) {
-        closingViaPopstate = true;
-        closeDrawer();
+drawer.addEventListener('click', (e) => {
+    if (e.target.closest('.header_link')) {
+        closeDrawer(e);
     }
 });

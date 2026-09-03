@@ -61,14 +61,27 @@
 
 }
 
-.adote_text{
+.adote_descricao_text{
+
+    width: 90%;
+    font-family: var(--fonte-sub-titulo);
+    text-align: justify;
+    font-style: normal;
+    font-size: 25px;
+    padding-top: 40px;
+
+}
+
+.adote_links_text{
 
     width: 90%;
     font-family: var(--fonte-sub-titulo);
     text-align: justify;
     font-style: italic;
     font-size: 25px;
-    padding-top: 40px;
+    font-weight: bold;
+    line-height: 1;
+    padding-top: 20px;
 
 }
 

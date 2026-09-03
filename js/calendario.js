@@ -95,13 +95,22 @@
       descricao: 'Data final para entrega da criação de Reels ou posts educativos/informativos sobre as atividades realizadas pelo projeto, ações de conscientização, artigos e demais conteúdos relevantes, seguindo a identidade visual estabelecida pelo projeto. Realizada pelo Núcleo de Comunicação e Conscientização.',
       repetirMensal: true
     },
-      {
+    {
       data: '2026-00-10',
       horaInicio: '10:00',
       horaFim: '18:00',
       nucleo: 'Financeiro',
       titulo: 'Coleta de arrecadação  - Obrigatório',
       descricao: 'Data final para criação e divulgação de uma chamada fixa para doações destinadas à manutenção e ao sustento do projeto. A campanha deverá ser divulgada em todos os canais de comunicação disponíveis, destacando a importância das contribuições para a continuidade das atividades e priorizando a captação de doações recorrentes. A atividade será realizada em conjunto pelo Núcleo de Comunicação e Conscientização e pelo Núcleo de Captação de Recursos e Parcerias.',
+      repetirMensal: true
+    },
+      {
+      data: '2026-00-16',
+      horaInicio: '10:00',
+      horaFim: '18:00',
+      nucleo: 'Tecnologia',
+      titulo: 'Atualização de informações  - Obrigatório',
+      descricao: 'Data final para atualizar as informações de novos apoiadores, voluntários bem como as imagens das seções. A atividade será realizada pelo Núcleo de Tecnologia da Informação.',
       repetirMensal: true
     },
   ];

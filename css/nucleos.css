@@ -68,7 +68,7 @@
   color: black;
   cursor: pointer;
   font-family: var(--fonte-sub-titulo);
-  font-size: 15px;
+  font-size: 18px;
   letter-spacing: .8px;
   line-height: 20px;
   padding: 13px 16px;
@@ -110,7 +110,7 @@
 .descricao_card_nucleos_titulo{
 
     font-family: var(--fonte-titulo);
-    font-size: 22px;
+    font-size: 30px;
     color: black;
 
 }
@@ -118,7 +118,7 @@
 .descricao_card_nucleos_texto{
 
     font-family: var(--fonte-sub-titulo);
-    font-size: 15px;
+    font-size: 23px;
     line-height: 22px;
     color: black;
     opacity: 0.85;

@@ -68,11 +68,16 @@
     justify-content: center;
     align-items: center;
     position: absolute;
+    width: 70px;
+    height: 70px;
     cursor: pointer;
-    transition: all 0.2s ease;
-    z-index: 10;
+    background-repeat: no-repeat;
+    background-position: center;
     border: none;
-    background: none;
+    background-color: transparent;
+    transition: transform 0.2s ease;
+    background-size: 70px;
+    z-index: 10;
     padding: 0;
 
 }
@@ -80,31 +85,20 @@
 #seta_voluntarios_esquerda{
 
     margin-right: clamp(100px, 85vw, 1200px);
+    background-image: url("../imgs/voluntarios/setaEsquerda.webp");
 
 }
 
 #seta_voluntarios_direita{
 
     margin-left: clamp(100px, 85vw, 1200px);
-
-}
-
-.carousel_seta_img{
-
-    width: 50px;
-    height: auto;
+    background-image: url("../imgs/voluntarios/setaDireita.webp");
 
 }
 
 .carousel_seta:hover{
 
-    background: rgba(0, 0, 0, 0.08);
-
-}
-
-.carousel_seta:active{
-
-    transform: translateY(-50%) scale(0.9);
+    transform: scale(1.05);
 
 }
 
@@ -371,20 +365,6 @@
     .slide_voluntarios{
 
         gap: 25px;
-
-    }
-
-    .carousel_seta{
-
-        width: 34px;
-        height: 34px;
-
-    }
-
-    .carousel_seta svg{
-
-        width: 20px;
-        height: 12px;
 
     }
 

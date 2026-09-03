@@ -7,8 +7,8 @@ const voluntarios = [
         contatos:[
             {
                 instagram: "https://www.instagram.com/leodlcg/",
-                linkdin: "https://www.instagram.com/meuamigoperro/",
-                email: "https://www.instagram.com/meuamigoperro/"
+                linkdin: "https://www.linkedin.com/in/leonardo-domingues-carvalho/",
+                email: "https://leodlcg.github.io/Portfolio/"
 
             }  
         ]
@@ -20,9 +20,7 @@ const voluntarios = [
         foto: "imgs/voluntarios/fotos/MariaEduarda.jpg",
         contatos:[
             {
-                instagram: "https://www.instagram.com/meuamigoperro/",
-                linkdin: "https://www.instagram.com/meuamigoperro/",
-                email: "https://www.instagram.com/meuamigoperro/"
+
 
             }  
         ]
@@ -34,9 +32,7 @@ const voluntarios = [
         foto: "imgs/voluntarios/fotos/DanielJuan.jpg",
         contatos:[
             {
-                instagram: "https://www.instagram.com/meuamigoperro/",
-                linkdin: "https://www.instagram.com/meuamigoperro/",
-                email: "https://www.instagram.com/meuamigoperro/"
+                instagram: "https://www.instagram.com/juanzito.kkj/",
 
             }  
         ]
@@ -48,9 +44,7 @@ const voluntarios = [
         foto: "imgs/voluntarios/fotos/YasminTeresa.jpg",
         contatos:[
             {
-                instagram: "https://www.instagram.com/meuamigoperro/",
-                linkdin: "https://www.instagram.com/meuamigoperro/",
-                email: "https://www.instagram.com/meuamigoperro/"
+                instagram: "https://www.instagram.com/yasmintvaress/",
 
             }  
         ]
@@ -62,9 +56,6 @@ const voluntarios = [
         foto: "imgs/voluntarios/fotos/LiviaRibeiro.jpeg",
         contatos:[
             {
-                instagram: "https://www.instagram.com/meuamigoperro/",
-                linkdin: "https://www.instagram.com/meuamigoperro/",
-                email: "https://www.instagram.com/meuamigoperro/"
 
             }  
         ]
@@ -76,9 +67,7 @@ const voluntarios = [
         foto: "imgs/voluntarios/fotos/FernandoFerreira.jpg",
         contatos:[
             {
-                instagram: "https://www.instagram.com/meuamigoperro/",
-                linkdin: "https://www.instagram.com/meuamigoperro/",
-                email: "https://www.instagram.com/meuamigoperro/"
+
 
             }  
         ]
@@ -90,9 +79,7 @@ const voluntarios = [
         foto: "imgs/voluntarios/fotos/DaviPinto.jpg",
         contatos:[
             {
-                instagram: "https://www.instagram.com/meuamigoperro/",
-                linkdin: "https://www.instagram.com/meuamigoperro/",
-                email: "https://www.instagram.com/meuamigoperro/"
+                instagram: "https://www.instagram.com/davi_pcruz/",
 
             }  
         ]

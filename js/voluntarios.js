@@ -20,7 +20,9 @@ const voluntarios = [
         foto: "imgs/voluntarios/fotos/MariaEduarda.jpg",
         contatos:[
             {
-
+                instagram: "",
+                linkdin: "",
+                email: ""
 
             }  
         ]
@@ -33,6 +35,8 @@ const voluntarios = [
         contatos:[
             {
                 instagram: "https://www.instagram.com/juanzito.kkj/",
+                linkdin: "",
+                email: ""
 
             }  
         ]
@@ -45,6 +49,8 @@ const voluntarios = [
         contatos:[
             {
                 instagram: "https://www.instagram.com/yasmintvaress/",
+                linkdin: "",
+                email: ""
 
             }  
         ]
@@ -57,6 +63,10 @@ const voluntarios = [
         contatos:[
             {
 
+                instagram: "",
+                linkdin: "",
+                email: ""
+
             }  
         ]
     },
@@ -68,6 +78,9 @@ const voluntarios = [
         contatos:[
             {
 
+                instagram: "",
+                linkdin: "",
+                email: ""
 
             }  
         ]
@@ -80,6 +93,8 @@ const voluntarios = [
         contatos:[
             {
                 instagram: "https://www.instagram.com/davi_pcruz/",
+                linkdin: "",
+                email: ""
 
             }  
         ]

@@ -31,45 +31,45 @@
       horaInicio: '19:00',
       horaFim: '20:00',
       nucleo: 'Tecnologia',
-      titulo: 'Reunião mensal de alinhamento - Opcional',
-      descricao: 'Reunião destinada ao Núcleo de Tecnologia da Informação à avaliação das atividades realizadas no mês anterior e à definição das atividades do próximo período.',
-      repetir: 'mensal'
+      titulo: 'Reunião semestral de alinhamento - Opcional',
+      descricao: 'Reunião destinada ao Núcleo de Tecnologia da Informação à avaliação das atividades realizadas no semestre anterior e à definição das metas do próximo período.',
+      repetir: 'semestral'
     },
     {
       data: '2026-00-27',
       horaInicio: '19:00',
       horaFim: '20:00',
       nucleo: 'Infraestrutura',
-      titulo: 'Reunião mensal de alinhamento - Opcional',
-      descricao: 'Reunião destinada ao Infraestrutura e Operações à avaliação das atividades realizadas no mês anterior e à definição das atividades do próximo período.',
-      repetir: 'mensal'
+      titulo: 'Reunião semestral de alinhamento - Opcional',
+      descricao: 'Reunião destinada ao Infraestrutura e Operações à avaliação das atividades realizadas no semestre anterior e à definição das metas do próximo período.',
+      repetir: 'semestral'
     },
     {
       data: '2026-00-26',
       horaInicio: '19:00',
       horaFim: '20:00',
       nucleo: 'Marketing',
-      titulo: 'Reunião mensal de alinhamento - Opcional',
-      descricao: 'Reunião destinada ao Núcleo de Comunicação e Conscientização à avaliação das atividades realizadas no mês anterior e à definição das atividades do próximo período.',
-      repetir: 'mensal'
+      titulo: 'Reunião semestral de alinhamento - Opcional',
+      descricao: 'Reunião destinada ao Núcleo de Comunicação e Conscientização à avaliação das atividades realizadas no semestre anterior e à definição das metas do próximo período.',
+      repetir: 'semestral'
     },
     {
       data: '2026-00-25',
       horaInicio: '19:00',
       horaFim: '20:00',
       nucleo: 'Financeiro',
-      titulo: 'Reunião mensal de alinhamento - Opcional',
-      descricao: 'Reunião destinada ao Núcleo de Captação de Recursos e Parcerias à avaliação das atividades realizadas no mês anterior e à definição das atividades do próximo período.',
-      repetir: 'mensal'
+      titulo: 'Reunião semestral de alinhamento - Opcional',
+      descricao: 'Reunião destinada ao Núcleo de Captação de Recursos e Parcerias à avaliação das atividades realizadas no semestre anterior e à definição das metas do próximo período.',
+      repetir: 'semestral'
     },
     {
       data: '2026-00-24',
       horaInicio: '19:00',
       horaFim: '20:00',
       nucleo: 'BemEstar',
-      titulo: 'Reunião mensal de alinhamento - Opcional',
-      descricao: 'Reunião destinada ao Núcleo de Bem-estar Animal à avaliação das atividades realizadas no mês anterior e à definição das atividades do próximo período.',
-      repetir: 'mensal'
+      titulo: 'Reunião semestral de alinhamento - Opcional',
+      descricao: 'Reunião destinada ao Núcleo de Bem-estar Animal à avaliação das atividades realizadas no semestre anterior e à definição das metas do próximo período.',
+      repetir: 'semestral'
     },
     {
       data: '2026-00-01',

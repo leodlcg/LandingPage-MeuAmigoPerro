@@ -2,12 +2,24 @@
 
   /* ==========================================================
      DADOS: array de objetos de eventos.
-     Cada evento: { data: 'AAAA-MM-DD', horaInicio, horaFim, nucleo, titulo, descricao, repetirMensal? }
-     - Se repetirMensal for true, o evento passa a ocorrer todo mês,
-       sempre no mesmo dia do mês da data original (a partir dela).
-       Se o dia não existir em algum mês (ex: 31 em fevereiro), usa
-       o último dia disponível daquele mês.
-     Edite/insira livremente neste array para popular o calendário.
+     Cada evento: { data: 'AAAA-MM-DD', horaInicio, horaFim, nucleo, titulo, descricao, repetir? }
+
+     REPETIÇÃO (campo `repetir`):
+       'nenhuma'        -> ocorre só na data informada (padrão)
+       'mensal'         -> a cada 1 mês
+       'bimestral'      -> a cada 2 meses
+       'trimestral'     -> a cada 3 meses
+       'quadrimestral'  -> a cada 4 meses
+       'quinquimestral' -> a cada 5 meses
+       'semestral'      -> a cada 6 meses
+     Também aceita um número direto (ex.: repetir: 2) e o campo antigo
+     `repetirMensal: true`, que continua funcionando como 'mensal'.
+
+     A contagem parte do mês da data informada. Se o dia não existir em
+     algum mês (ex.: 31 em fevereiro), usa o último dia daquele mês.
+
+     Atalho: usar mês '00' (ex.: '2026-00-28') faz o evento começar em
+     janeiro do ano informado, sem precisar escolher um mês específico.
      ========================================================== */
   const hoje = new Date();
   const pad = n => String(n).padStart(2,'0');
@@ -21,7 +33,7 @@
       nucleo: 'Tecnologia',
       titulo: 'Reunião mensal de alinhamento - Opcional',
       descricao: 'Reunião destinada ao Núcleo de Tecnologia da Informação à avaliação das atividades realizadas no mês anterior e à definição das atividades do próximo período.',
-      repetirMensal: true
+      repetir: 'mensal'
     },
     {
       data: '2026-00-27',
@@ -30,16 +42,16 @@
       nucleo: 'Infraestrutura',
       titulo: 'Reunião mensal de alinhamento - Opcional',
       descricao: 'Reunião destinada ao Infraestrutura e Operações à avaliação das atividades realizadas no mês anterior e à definição das atividades do próximo período.',
-      repetirMensal: true 
+      repetir: 'mensal'
     },
     {
       data: '2026-00-26',
       horaInicio: '19:00',
       horaFim: '20:00',
-      nucleo: 'Contato',
+      nucleo: 'Marketing',
       titulo: 'Reunião mensal de alinhamento - Opcional',
       descricao: 'Reunião destinada ao Núcleo de Comunicação e Conscientização à avaliação das atividades realizadas no mês anterior e à definição das atividades do próximo período.',
-      repetirMensal: true
+      repetir: 'mensal'
     },
     {
       data: '2026-00-25',
@@ -48,7 +60,7 @@
       nucleo: 'Financeiro',
       titulo: 'Reunião mensal de alinhamento - Opcional',
       descricao: 'Reunião destinada ao Núcleo de Captação de Recursos e Parcerias à avaliação das atividades realizadas no mês anterior e à definição das atividades do próximo período.',
-      repetirMensal: true
+      repetir: 'mensal'
     },
     {
       data: '2026-00-24',
@@ -57,7 +69,7 @@
       nucleo: 'BemEstar',
       titulo: 'Reunião mensal de alinhamento - Opcional',
       descricao: 'Reunião destinada ao Núcleo de Bem-estar Animal à avaliação das atividades realizadas no mês anterior e à definição das atividades do próximo período.',
-      repetirMensal: true
+      repetir: 'mensal'
     },
     {
       data: '2026-00-01',
@@ -66,7 +78,7 @@
       nucleo: 'Financeiro',
       titulo: 'Prestação de contas - Obrigatório',
       descricao: 'Organização das entradas e saídas mensais para divulgação pública via Instagram, visando à transparência. Realizada pelo Núcleo de Captação de Recursos e Parcerias.',
-      repetirMensal: true
+      repetir: 'mensal'
     },
     {
       data: '2026-00-15',
@@ -75,25 +87,25 @@
       nucleo: 'Administrativo',
       titulo: 'Seleção processo seletivo - Obrigatório',
       descricao: 'Consiste na análise e avaliação dos candidatos que realizaram a leitura do edital e o preenchimento do formulário de inscrição, visando à seleção de novos voluntários. Realizada pelo Núcleo Administrativo e Jurídico.',
-      repetirMensal: true
+      repetir: 'mensal'
     },
     {
       data: '2026-00-05',
       horaInicio: '10:00',
       horaFim: '18:00',
-      nucleo: 'Contato',
+      nucleo: 'Marketing',
       titulo: 'Publicação de um post/reels - Obrigatório',
       descricao: 'Data final para entrega da Criação de Reels ou posts educativos/informativos sobre as atividades realizadas pelo projeto, ações de conscientização, artigos e demais conteúdos relevantes, seguindo a identidade visual estabelecida pelo projeto. Realizada pelo Núcleo de Comunicação e Conscientização.',
-      repetirMensal: true
+      repetir: 'mensal'
     },
     {
       data: '2026-00-20',
       horaInicio: '10:00',
       horaFim: '18:00',
-      nucleo: 'Contato',
+      nucleo: 'Marketing',
       titulo: 'Publicação de um post/reels - Obrigatório',
       descricao: 'Data final para entrega da criação de Reels ou posts educativos/informativos sobre as atividades realizadas pelo projeto, ações de conscientização, artigos e demais conteúdos relevantes, seguindo a identidade visual estabelecida pelo projeto. Realizada pelo Núcleo de Comunicação e Conscientização.',
-      repetirMensal: true
+      repetir: 'mensal'
     },
     {
       data: '2026-00-10',
@@ -102,18 +114,138 @@
       nucleo: 'Financeiro',
       titulo: 'Coleta de arrecadação  - Obrigatório',
       descricao: 'Data final para criação e divulgação de uma chamada fixa para doações destinadas à manutenção e ao sustento do projeto. A campanha deverá ser divulgada em todos os canais de comunicação disponíveis, destacando a importância das contribuições para a continuidade das atividades e priorizando a captação de doações recorrentes. A atividade será realizada em conjunto pelo Núcleo de Comunicação e Conscientização e pelo Núcleo de Captação de Recursos e Parcerias.',
-      repetirMensal: true
+      repetir: 'mensal'
     },
-      {
+    {
       data: '2026-00-16',
       horaInicio: '10:00',
       horaFim: '18:00',
       nucleo: 'Tecnologia',
       titulo: 'Atualização de informações  - Obrigatório',
       descricao: 'Data final para atualizar as informações de novos apoiadores, voluntários bem como as imagens das seções. A atividade será realizada pelo Núcleo de Tecnologia da Informação.',
-      repetirMensal: true
+      repetir: 'mensal'
     },
+    {
+    data: '2026-00-01',
+    horaInicio: '10:00',
+    horaFim: '18:00',
+    nucleo: 'Administrativo',
+    titulo: 'Verificar planilha de participação - Obrigatório',
+    descricao: 'Data final para verificar a planilha de participação dos voluntários, bem como aplicar as devidas penalidades. A atividade será realizada pelo Núcleo Administrativo e Jurídico.',
+    repetir: 'mensal'
+    },
+    {
+    data: '2026-06-25',
+    horaInicio: '08:00',
+    horaFim: '18:00',
+    nucleo: 'Administrativo',
+    titulo: 'Criar relatório desenvolvimento - Obrigatório',
+    descricao: 'Data final para criar relatório de desenvolvimento voltado a coordenação da UFC contendo as planilhas individuais de atividades de todos os voluntario. A atividade será realizada pelo Núcleo Administrativo e Jurídico.',
+    repetir: 'semestral'
+    },
+    {
+    data: '2026-00-28',
+    horaInicio: '08:00',
+    horaFim: '18:00',
+    nucleo: 'BemEstar',
+    titulo: 'Catalogar animal - Obrigatório',
+    descricao: 'Catalogar animal em situação de vulnerabilidade na planilha “Catalogação - Animais - Público”, em Russas – CE. A atividade será realizada pelo Núcleo Administrativo e Jurídico.',
+    repetir: 'mensal'
+    },
+    {
+    data: '2026-00-01',
+    horaInicio: '08:00',
+    horaFim: '18:00',
+    nucleo: 'Administrativo',
+    titulo: 'Preencher Metas Compridas - Obrigatório',
+    descricao: 'Preencher as metas que foram cumpridas no mês anterior na planilha de metas e avaliar o que poderia ser feito para que todas sejam cumpridas. A atividade será realizada pelo Núcleo Administrativo e Jurídico.',
+    repetir: 'mensal'
+    },
+    {
+    data: '2026-00-30',
+    horaInicio: '08:00',
+    horaFim: '18:00',
+    nucleo: 'BemEstar',
+    titulo: 'Castrar Animal - Obrigatório',
+    descricao: 'Data final Capturar e castrar um animal em situação de vulnerabilidade junto ao Núcleo de Infraestrutura e Operações (de preferência, fêmea)',
+    repetir: 'trimestral'
+    },
+    {
+    data: '2026-00-02',
+    horaInicio: '08:00',
+    horaFim: '18:00',
+    nucleo: 'BemEstar',
+    titulo: 'Identificar Apoiador - Obrigatório',
+    descricao: 'Identificar e separar um apoiador que irá receber um ApoioPet o mesmo deve aceitar o termo de recebimento e responsabilidade. A atividade será realizada pelo Núcleo de Bem-Estar em conjunto com o de Infraestrutura e Comunicação.',
+    repetir: 'trimestral'
+    },
+    {
+    data: '2026-00-02',
+    horaInicio: '08:00',
+    horaFim: '18:00',
+    nucleo: 'Infraestrutura',
+    titulo: 'Confeccionar ApoioPet - Obrigatório',
+    descricao: 'Confecção de um ApoioPet de qualquer modelo seguindos todos os padrões do desenho técnico até no final do mês. A atividade será realizada pelo Núcleos de Infraestrutura e Operações.',
+    repetir: 'trimestral'
+    },
+    {
+    data: '2026-00-03',
+    horaInicio: '08:00',
+    horaFim: '18:00',
+    nucleo: 'Infraestrutura',
+    titulo: 'Verificar Necessidadede de Manutenção - Obrigatório',
+    descricao: 'Os voluntários do núcleo devem se dividir para verificar as condições das ferramentas e estruturas do projeto. Caso seja encontrado algum problema, ele deve ser informado e corrigido o mais rápido possível. A atividade será realizada pelo Núcleos de Infraestrutura e Operações',
+    repetir: 'mensal'
+    },
+
   ];
+
+  /* ==========================================================
+     FREQUÊNCIAS DE REPETIÇÃO
+     Nome -> intervalo em meses.
+     ========================================================== */
+  const INTERVALOS_REPETICAO = {
+    nenhuma: 0,
+    mensal: 1,
+    bimestral: 2,
+    trimestral: 3,
+    quadrimestral: 4,
+    quinquimestral: 5,
+    semestral: 6
+  };
+
+  const ROTULOS_REPETICAO = {
+    1: 'Mensal',
+    2: 'Bimestral',
+    3: 'Trimestral',
+    4: 'Quadrimestral',
+    5: 'Quinquimestral',
+    6: 'Semestral'
+  };
+
+  function normalizarChave(texto){
+    return String(texto)
+      .toLowerCase()
+      .normalize('NFD')
+      .replace(/[\u0300-\u036f]/g, '')
+      .trim();
+  }
+
+  /* intervalo em meses de um evento: 0 = não repete */
+  function intervaloDoEvento(evento){
+    if(typeof evento.repetir === 'number'){
+      return Math.max(0, Math.round(evento.repetir));
+    }
+    if(typeof evento.repetir === 'string'){
+      const chave = normalizarChave(evento.repetir);
+      if(chave in INTERVALOS_REPETICAO) return INTERVALOS_REPETICAO[chave];
+      console.warn(`Frequência de repetição desconhecida: "${evento.repetir}" (evento "${evento.titulo}")`);
+      return 0;
+    }
+    // compatibilidade com o campo antigo
+    if(evento.repetirMensal) return 1;
+    return 0;
+  }
 
   /* ==========================================================
      CORES POR NÚCLEO
@@ -125,7 +257,7 @@
   const CORES_NUCLEO = {
     Administrativo: '#dd00ff',
     BemEstar: '#00ff8c',
-    Contato: '#ff8c00',
+    Marketing: '#ff8c00',
     Financeiro: '#ffea00',
     Infraestrutura: '#ff0000',
     Tecnologia: '#001eff'
@@ -176,22 +308,27 @@
   }
 
   /* decide se um evento ocorre num determinado dia (AAAA-MM-DD),
-     considerando eventos fixos mensais e o caso de meses mais curtos */
+     considerando o intervalo de repetição e meses mais curtos */
   function ocorreEmData(evento, iso){
     if(evento.data === iso) return true;
-    if(!evento.repetirMensal) return false;
 
-    // não repete antes da data original do evento
-    if(iso < evento.data) return false;
+    const intervalo = intervaloDoEvento(evento);
+    if(intervalo <= 0) return false;
 
-    const diaBase = Number(evento.data.split('-')[2]);
+    const [baseAno, baseMesBruto, baseDia] = evento.data.split('-').map(Number);
+    // mês '00' (ou inválido) = atalho para começar em janeiro do ano informado
+    const baseMes = (baseMesBruto >= 1 && baseMesBruto <= 12) ? baseMesBruto : 1;
+
     const [anoIso, mesIso, diaIso] = iso.split('-').map(Number);
+
+    // o mês precisa estar na sequência: base, base+intervalo, base+2*intervalo...
+    const mesesDesdeBase = (anoIso - baseAno) * 12 + (mesIso - baseMes);
+    if(mesesDesdeBase < 0) return false;
+    if(mesesDesdeBase % intervalo !== 0) return false;
 
     // se o dia base (ex: 31) não existir no mês, usa o último dia do mês
     const ultimoDiaDoMesIso = new Date(anoIso, mesIso, 0).getDate();
-    const diaEsperado = Math.min(diaBase, ultimoDiaDoMesIso);
-
-    return diaIso === diaEsperado;
+    return diaIso === Math.min(baseDia, ultimoDiaDoMesIso);
   }
 
   function eventosDaData(iso){
@@ -201,7 +338,7 @@
   }
 
   /* calcula os códigos de núcleo únicos presentes num dia específico,
-     considerando também eventos recorrentes (repetirMensal) */
+     considerando também eventos recorrentes */
   function nucleosNaData(iso){
     const codigos = [];
     eventos.forEach(e => {
@@ -344,6 +481,9 @@
 
     lista.forEach(ev => {
       const cor = corDoNucleo(ev.nucleo);
+      const intervalo = intervaloDoEvento(ev);
+      const rotuloRepeticao = ROTULOS_REPETICAO[intervalo] || (intervalo > 1 ? `A cada ${intervalo} meses` : '');
+
       const cartao = document.createElement('div');
       cartao.className = 'cartao-evento';
       cartao.style.borderLeftColor = cor;
@@ -354,6 +494,7 @@
         </div>
         <div class="titulo">${escaparHtml(ev.titulo)}</div>
         <div class="descricao">${escaparHtml(ev.descricao)}</div>
+        ${rotuloRepeticao ? `<div class="repeticao" style="margin-top:.4rem; font-size:.78em; opacity:.7;">Repete: ${escaparHtml(rotuloRepeticao)}</div>` : ''}
       `;
       envolucro.appendChild(cartao);
     });
